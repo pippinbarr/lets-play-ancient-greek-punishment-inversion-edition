@@ -1,5 +1,7 @@
 # Let's Play: Ancient Greek Punishment: Inversion Edition
 
+- [Process documentation](process/README.md)
+
 ## Previous editions
 1. Let's Play: Ancient Greek Punishment
 2. Let's Play: Ancient Greek Punishment: Art Edition Edition

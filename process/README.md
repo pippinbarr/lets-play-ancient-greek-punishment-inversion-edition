@@ -1,5 +1,5 @@
 - [Process Journal](./process-journal.md)
 - To-Do List
-- Related Work
+- [Related Work](./related-work.md)
 - Methodology
-- Research Questions
+- [Research Questions](./research-questions.md)
