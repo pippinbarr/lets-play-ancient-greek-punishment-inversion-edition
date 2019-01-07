@@ -18,7 +18,7 @@ I wrote the following about the game when quickly brainstorming it for the first
 
 > So maybe there's room for some different comical experiences in there? Each one has a certain something. Perhaps Tantalus is the least clear to me suddenly? But perhaps not, perhaps it's fine for it to just be what it is? What happens if you let him get the apple? Maybe you lose because the point is you're meant to be punishing these people forever - so it maintains the infinite experience, but points out that the punisher also suffers for enternity? I quite like that! OKAY. This game is officially doable.
 
-# Monday, 7 January 2019, 7:08AM
+# Introductions, Attitude, Early Design, Two-player?, Assets and Code (Monday, 7 January 2019, 7:08AM)
 
 __Introductions.__
 
