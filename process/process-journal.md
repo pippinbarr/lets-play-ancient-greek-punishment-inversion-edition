@@ -79,3 +79,73 @@ Option 3 is appealing because it means I don't have to care right now, but it mi
 So in that case I lean toward option 2. With Prometheus as the most problematic because of the time limit and the potential for it to be "unwinnable" for the antagonist, which is out of keeping with the myth. The antagonist should always have the advantage and the whole thing just becomes about both player sustaining the experience for as long as they can bear it. The easiest way to make that work for the Prometheus version is to not allow failure I suppose, but that kind of breaks the theme of "failing the myth" as the antagonist which I really like. Something to think about.
 
 __Assets and Code, or Here's Something I Prepared Earlier.__ One funny thing about this whole project is that at some level I have all the assets basically done from the beginning as far as I can think of it. Having made Limited Edition and CPU Edition both in Phaser, and given that those two games reflect both scenarios (victory for antagonist and victory for protagonist), there's nothing to do assets-wise, or very little. Importantly, too, I don't _want_ the game to look or sound any different from previously - part of the point of this series is using the same imagery and sounds to convey different tones/ideas about the "same" situation. This probably extends to the level of code in lots of ways too - the code is kind of pre-written in a lot of ways, just need to thread it together differently? We'll see.
+
+---
+
+# Laying down the design, abandoning mobile?, Phaser 3? (Wednesday, 9 January 2019, 7:02AM)
+
+The time has come to write down what's needed to actually create these games, no need to delay I think, the concept is simple, most of the design is pre-existing in terms of the overall idea, so I shouldn't have to do vast amount? Without further ado then?
+
+__Sisyphus__
+
+- Identical assets etc. (as in, it's even fine to have the same long animation of the entire scene which I did back in the day because it was so hard to programmatically animate the pushing)
+- Sispyhus steadily pushes on the boulder to move it up (should he ever pause now and then and lose ground on his own, or would that be confusing? Probably confusing)
+- Alternating G and H (or tapping for mobile) reverses the animation and pushes him backwards (at a rate relative to your effort)
+- He pushes at a basic solid effort, so if you work hard you push him (slowly?) back, average he just stays in place, and not hard enough he will make progress
+- Should you push him backwards even on the flat? Probably the answer is either yes or that he starts at the foot of the hill so you don't need to worry about any of the pushing not being a kind of enaction of "gravity"?
+- _Ending_ If he makes it to the top, it's game over - "Sisyphus pushed the boulder to the top of the hill!" "YOU LOSE"
+
+__Prometheus__
+
+- Control the eagle movement with arrow keys (could do space to flap or something to control height in a more interesting way? But what would that really add?) (Some concern about mobile in this scenario - only have one "button" and I don't think it'll be expressive enough for all the actions here?)
+- Land on Prometheus - I guess if you reach a certain proximity it just flips to landed? What if you land in the wrong place - how do you know where to land if you're the player? (And haven't played the previous games? Maybe the instruction can tell you to land on his legs?)
+- Once landed you need a key to peck and possibly movement keys to take off again? (I'm thinking about 2-player there a bit?) Or perhaps not, perhaps just if you get shook off you need to land and start again?
+- Once the liver is gone you should fly off the screen I suppose, but could also just make night fall instantly and not show the bird anymore so that it's not yet another step
+- Obviously Prometheus needs to struggle intermittently.
+- This one is clearly a bit over complex and I'm less sure of myself
+- Could consider the eagle flying on a path, so you don't control movement, but rather flapping - tap/keys to fly down to the guy, then tap to peck, and tap to reland if shaken off? Too little agency? I mean it's not meant to be a high agency game...
+- _Ending_ Uh... I guess this one doesn't actually have a success case! No ending then. Just eternal detente or eternal liver-eating
+- __Key design problem__: How do you control a complex thing like the flight of the eagle in combination with landing and pecking, when you're trying to minimize complexity? And if you restrict it too much does it feel untrue to the thing you're seeing? (Sisyphus is just keyboard mashing but it feels true to the experience) If it's 'tap' to flap, so you make incremental progress toward Prometheus, then land automatically, then it's tap to peck? Is that sufficient? In one sense it's lame because you could play without looking - just tap tap tap. On the other hand, it's at least a pairing between an act (tap/press) and an outcome (flap, peck). Maybe one key for flapping down and one key for pecking? What if you flap when you've landed? Would you take off? Perhaps it would take off into the hover mode? Then you'd have to land again? A bit confusing if a single tap means to flap up and to flap down?
+
+__Zeno__
+
+- Control the flag with arrow keys, left and right, it can move kind of quickly, but at least moves faster than the guy
+- The guy jogs toward the flag and your job is to keep it away from him
+- This means we need a scrolling world because you need to be able to head off to the right
+- I guess we could say they always have to both be on the same screen (no zooming), so at a certain point of him jogging (1/3?) the screen would start to scroll right with his movements, and then would allow you to move further right, so you could always be at least 2/3 of the screen away
+- Might need some kind of hint of a background to clarify what's going on though? Would have some concern that this would look pretty abstract (may just be something where I have to make it and check it out). Markings on the ground (like the half-way point etc. could work do? Little ruler markings?)
+- _Ending_ Ends if he reaches the flag (or you run the flag into him) and completes the race
+
+__Tantalus__
+
+- Pretty straightforward reversal. Press one key to raise the apple (I guess perhaps it should just be press and hold, doesn't feel like this one should require play effort) and another to lower the water.
+- The point is to watch for his animation toward one of the other and get it out of the way in time
+- Can you withdraw the apple and water at the same time? And just keep them there, unavailable? Don't see why not...
+- _Ending_ Ends when he manages to grab the apple or drink some water
+
+__Danaids__
+
+- Control the bathtub's holes (not sure if they should start open or closed? Probably closed.)
+- The person will fill the bucket and proceed to the bath, pour the water in (regardless)
+- If the holes are closed, the bath fills (as per Limited Edition), but if at any point you open them, it all pours out (might need some new animation for that)
+- If they fill the bath all the way to the top they start washing themselves (maybe need a little progress bar? Need a little animation, maybe just a flashing "cleaning" text?)
+- If they get clean you lose, but you can still empty the bath while they're cleaning and they'd get out and go and fill the bucket again etc. (maybe they have some amount of cleanliness needed under the hood?)
+- Need to say that if you open the holes all the water comes out, can't control the amount
+- _Ending_ Cleanliness
+
+__2-player__
+
+- Unlocked when you've attempted any given level? Or all the levels? For some set amount of time so you can't just load and immediately quit? Maybe you have to lose to get back to the menu? Or even if you reload the page/come back, you should have it enabled?
+- Should literally be exactly the same, but someone can play the original role in the same way it is always played - not about it being fair/balanced/interesting, just about creating the dynamic between people instead of a person and a system. In some of them you're more blatantly at the mercy of the punisher, in others it's less clear (Prometheus, Sisyphus?)
+- Problems of input for mobile here - Tantalus would require four distinct actions, and even if screen is in quadrants if feels like it'd be very busy to look at... (although frankly the instructions for 2-player on desktop would be similarly overwhelming I suppose)
+
+__Mobile__
+
+- Is it even worth it? What do I get out of it? Does anyone play on mobile? These aren't really designed for mobile. Is there even a culture of people playing stuff on mobile in the browser? It can be a significant effort and a design problem to go after it, and I'm unsure why - it seems like it'd just be for numbers of people looking at it, but... meh?
+- So it's looking like no mobile then...
+
+__Phaser__
+
+- I see that Phaser 3 is out now which is... good? But it looks like it's pretty radically changed from the 2.x series which makes me leery of jumping into it. Also this makes me think: yikes in terms of teaching it for CART263 actually. Will have to think about that.
+- Investigating Phaser 3 a bit more reading its updates etc... I guess it would make sense to migrate just in terms of needing to learn it at some point anyway for any 2D stuff I'm going to do? I can do the basic tutorials and then use those as the basis for presenting something to class while simultaneously using what I learn to work on this game? It'll delay the output of the game for a bit, but I think that's probably fine anyway. Double whammy?
+- So the next step really for this game is going to be to do Phaser 3 tutorials and learn that, which I'll look forward to!
