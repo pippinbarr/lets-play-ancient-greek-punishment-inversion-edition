@@ -7,7 +7,7 @@ let Preloader = new Phaser.Class({
     },
 
     preload: function () {
-      
+      this.load.image('assets/images/placeholder');
     },
 
     create: function () {
