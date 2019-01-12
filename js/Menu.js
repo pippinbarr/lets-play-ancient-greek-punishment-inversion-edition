@@ -34,8 +34,8 @@ let Menu = new Phaser.Class({
       itemText.setOrigin(0.5);
       this.input.keyboard.on('keydown', (e) => {
         if (e.key.toUpperCase() === item.key) {
-          console.log(item.text);
-          this.scene.start(item.scene);
+          console.log("Starting scene: " + item.scene)
+          this.scene.start('sisyphus');
         }
       });
     },

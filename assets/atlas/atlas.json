@@ -1,0 +1,2057 @@
+{
+	"textures": [
+		{
+			"image": "atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1010,
+				"h": 2040
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "sisyphus/sisyphus_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 103,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 205,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_12.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 307,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_13.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 409,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_14.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 511,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_15.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 613,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_16.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 715,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_17.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 817,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_18.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 919,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_19.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1021,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1123,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_20.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1225,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_21.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1327,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_22.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1429,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_23.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1531,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_24.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1633,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_25.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1735,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_26.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1837,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_27.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 1,
+						"y": 1939,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_28.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_29.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 103,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 205,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_30.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 307,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_31.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 409,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_32.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 511,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_33.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 613,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_34.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 715,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_35.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 817,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_36.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 919,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_37.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1021,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_38.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1123,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_39.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1225,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1327,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_40.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1429,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_41.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1531,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_42.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1633,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_43.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1735,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_44.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1837,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_45.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 203,
+						"y": 1939,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_46.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_47.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 103,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_48.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 205,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_49.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 307,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 409,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_50.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 511,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_51.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 613,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_52.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 715,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_53.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 817,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_54.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 919,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_55.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1021,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_56.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1123,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_57.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1225,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_58.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1327,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_59.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1429,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1531,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_60.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1633,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_61.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1735,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_62.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1837,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_63.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 405,
+						"y": 1939,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_64.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_65.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 103,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_66.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 205,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_67.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 307,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_68.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 409,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_69.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 511,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 613,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_70.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 715,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_71.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 817,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_72.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 919,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_73.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1021,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_74.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1123,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_75.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1225,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_76.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1327,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_77.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1429,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_78.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1531,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_79.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1633,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1735,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_80.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1837,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_81.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 607,
+						"y": 1939,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_82.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_83.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 103,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_84.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 205,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_85.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 307,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_86.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 409,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_87.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 511,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_88.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 613,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_89.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 715,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 817,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_90.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 919,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_91.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1021,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_92.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1123,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_93.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1225,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_94.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1327,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_95.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1429,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "sisyphus/sisyphus_96.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 100
+					},
+					"frame": {
+						"x": 809,
+						"y": 1531,
+						"w": 200,
+						"h": 100
+					}
+				},
+				{
+					"filename": "placeholder.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 10
+					},
+					"frame": {
+						"x": 809,
+						"y": 1633,
+						"w": 10,
+						"h": 10
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:593641be0c0f21e76797cf342ff049fe:9618e47453446976dbe2c82560ebefa1:cbce6b53f0f49e0bf15173c25c41f876$"
+	}
+}

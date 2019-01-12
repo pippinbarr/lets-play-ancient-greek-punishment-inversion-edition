@@ -7,7 +7,7 @@ let Preloader = new Phaser.Class({
     },
 
     preload: function () {
-      this.load.image('assets/images/placeholder');
+      this.load.multiatlas('atlas', 'assets/atlas/atlas.json', 'assets/atlas');
     },
 
     create: function () {
