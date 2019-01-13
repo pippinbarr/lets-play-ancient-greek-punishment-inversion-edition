@@ -149,3 +149,15 @@ __Phaser__
 - I see that Phaser 3 is out now which is... good? But it looks like it's pretty radically changed from the 2.x series which makes me leery of jumping into it. Also this makes me think: yikes in terms of teaching it for CART263 actually. Will have to think about that.
 - Investigating Phaser 3 a bit more reading its updates etc... I guess it would make sense to migrate just in terms of needing to learn it at some point anyway for any 2D stuff I'm going to do? I can do the basic tutorials and then use those as the basis for presenting something to class while simultaneously using what I learn to work on this game? It'll delay the output of the game for a bit, but I think that's probably fine anyway. Double whammy?
 - So the next step really for this game is going to be to do Phaser 3 tutorials and learn that, which I'll look forward to!
+
+---
+
+# Sunday, 13 January 2019, 13:12PM
+
+Reporting in. I've settled into using Phaser 3 and it's going fine with my existing knowledge of version 2. There have been things to learn, but this is such a simple game and the Phaser 3 framework is pretty similar to the previous, so it's not that hard to adjust myself to it. (By the way I resolved the teaching part of this by just not promising to teach Phaser - it was a ridiculous scale of thing to teach anyway.)
+
+At this point I have Sisyphus all but done, which is a good feeling. Some nice moments of realisation along the way about the instructions ([41a9fe3](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition/commit/41a9fe39aa586e5055258585cc011da8f90367e7)) and the issue of indicating Sisyphus's goal ([529e09c](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition/commit/529e09c83045b9f63c3a1e27fa0bf45102ee76aa)).
+
+Looking ahead I can see there will be various potential issues of separating out animations, because in many of the games the animations are coupled all together (e.g. Tantalus). Given I now need independent control of two elements per scene, it'll often be the case that they need to animate separately (Sisyphus is an exception because he's locked to the boulder). So this project will require some animation stuff, which is fine.
+
+Don't foresee any major bumps as yet. Phaser 3 has come to me faster than expected, which I'm happy about for sure.
