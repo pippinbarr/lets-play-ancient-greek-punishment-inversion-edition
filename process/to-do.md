@@ -9,7 +9,10 @@
 
 ### Sisyphus
 - ~~Finish first version to point where you can use input to reverse the animation down the hill~~
-- Add the ending
+- ~~Add the ending~~
+- ~~__WENT WITH THE AWFUL PROCESS OF DRAWING RECTANGLES OVER IT. WORKS.__ How to indicate the "top" of the hill? (Remove in all images is a huge pain, code to draw rects over top part of the hill would work but is ugly?)~~
+
+- Remove instructions once they've followed them and had an effect
 
 ## Bugs
 
