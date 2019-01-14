@@ -14,7 +14,7 @@ let Sisyphus = new Phaser.Class({
     // -1 = no rock force (Sisyphus pushes top speed)
     // 0 = equillibrium and no movement
     // +1 = total rock force (Sisyphus retreats)
-    this.rockForce = 1;
+    this.rockForce = -1;
     // Track their use of playing with the keys so we know they get it
     this.MIN_KEY_COUNT = 20;
     this.keyCount = 0;

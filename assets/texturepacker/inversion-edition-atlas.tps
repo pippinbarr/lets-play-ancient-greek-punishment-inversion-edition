@@ -181,131 +181,119 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../images/placeholder.png</key>
+            <key type="filename">images/sisyphus/hill.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_1.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_10.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_11.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_12.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_13.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_14.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_15.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_16.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_17.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_18.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_19.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_2.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_20.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_21.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_22.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_23.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_24.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_25.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_26.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_27.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_28.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_29.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_3.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_30.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_31.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_32.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_33.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_34.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_35.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_36.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_37.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_38.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_39.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_4.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_40.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_41.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_42.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_43.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_44.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_45.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_46.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_47.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_48.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_49.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_5.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_50.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_51.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_52.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_53.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_54.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_55.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_56.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_57.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_58.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_59.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_6.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_60.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_61.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_62.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_63.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_64.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_65.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_66.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_67.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_68.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_69.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_7.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_70.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_71.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_72.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_73.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_74.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_75.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_76.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_77.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_78.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_79.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_8.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_80.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_81.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_82.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_83.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_84.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_85.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_86.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_87.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_88.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_89.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_9.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_90.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_91.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_92.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_93.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_94.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_95.png</key>
+            <key type="filename">images/sisyphus/sisyphus/sisyphus_96.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>3,3,5,5</rect>
+                <rect>60,33,120,65</rect>
                 <key>scale9Paddings</key>
-                <rect>3,3,5,5</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../images/sisyphus/sisyphus_1.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_10.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_11.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_12.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_13.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_14.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_15.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_16.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_17.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_18.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_19.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_2.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_20.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_21.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_22.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_23.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_24.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_25.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_26.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_27.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_28.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_29.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_3.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_30.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_31.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_32.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_33.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_34.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_35.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_36.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_37.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_38.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_39.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_4.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_40.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_41.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_42.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_43.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_44.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_45.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_46.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_47.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_48.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_49.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_5.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_50.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_51.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_52.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_53.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_54.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_55.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_56.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_57.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_58.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_59.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_6.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_60.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_61.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_62.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_63.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_64.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_65.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_66.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_67.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_68.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_69.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_7.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_70.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_71.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_72.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_73.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_74.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_75.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_76.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_77.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_78.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_79.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_8.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_80.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_81.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_82.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_83.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_84.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_85.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_86.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_87.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_88.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_89.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_9.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_90.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_91.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_92.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_93.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_94.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_95.png</key>
-            <key type="filename">../images/sisyphus/sisyphus_96.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>50,25,100,50</rect>
-                <key>scale9Paddings</key>
-                <rect>50,25,100,50</rect>
+                <rect>60,33,120,65</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../images</filename>
+            <filename>images</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
