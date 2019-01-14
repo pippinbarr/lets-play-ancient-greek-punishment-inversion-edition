@@ -290,6 +290,39 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">images/zeno/flag.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>3,8,5,15</rect>
+                <key>scale9Paddings</key>
+                <rect>3,8,5,15</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">images/zeno/zeno/zeno_1.png</key>
+            <key type="filename">images/zeno/zeno/zeno_2.png</key>
+            <key type="filename">images/zeno/zeno/zeno_3.png</key>
+            <key type="filename">images/zeno/zeno/zeno_4.png</key>
+            <key type="filename">images/zeno/zeno/zeno_5.png</key>
+            <key type="filename">images/zeno/zeno/zeno_6.png</key>
+            <key type="filename">images/zeno/zeno/zeno_7.png</key>
+            <key type="filename">images/zeno/zeno/zeno_8.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>5,6,10,11</rect>
+                <key>scale9Paddings</key>
+                <rect>5,6,10,11</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
         </map>
         <key>fileList</key>
         <array>
