@@ -15,6 +15,9 @@ let Sisyphus = new Phaser.Class({
     // 0 = equillibrium and no movement
     // +1 = total rock force (Sisyphus retreats)
     this.rockForce = 1;
+    // Track their use of playing with the keys so we know they get it
+    this.MIN_KEY_COUNT = 20;
+    this.keyCount = 0;
   },
 
   create: function () {
@@ -22,8 +25,11 @@ let Sisyphus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    this.hill = this.add.sprite(this.game.canvas.width/2, this.game.canvas.height/2,'atlas','sisyphus/hill.png');
+    this.hill.setScale(4,4);
+
     // Create the sprite that represents the entire minigame, scale up
-    this.sisyphus = this.add.sprite(this.game.canvas.width/2, this.game.canvas.height/2, 'atlas', 'sisyphus/sisyphus_1.png');
+    this.sisyphus = this.add.sprite(this.game.canvas.width/2 + 4*20, this.game.canvas.height/2 - 4*15, 'atlas', 'sisyphus/sisyphus/sisyphus_1.png');
     this.sisyphus.setScale(4,4);
 
     // Add the various animations
@@ -33,11 +39,9 @@ let Sisyphus = new Phaser.Class({
     this.createAnimation('downhill',95,51);
 
     // Sisyphus starts off pushing by default
-    this.sisyphus.anims.play('uphill');
+    this.sisyphus.anims.play('start');
 
     this.defaultFrameTime = this.sisyphus.anims.currentAnim.msPerFrame;
-
-    this.createTopOfHill();
 
     // Add input tracking
     this.keyOne = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
@@ -46,9 +50,9 @@ let Sisyphus = new Phaser.Class({
 
     // Add instructions
     let instructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
-    let instructionText = "YOU ARE THE ROCK\nRAPIDLY PRESS\n'G' AND 'H'\nTO ROLL DOWNHILL";
-    let instructions = this.add.text(this.game.canvas.width/4,100,instructionText,instructionStyle);
-    instructions.setOrigin(0.5);
+    let instructionString = "YOU ARE THE ROCK\nRAPIDLY PRESS\n'G' AND 'H'\nTO ROLL DOWNHILL";
+    this.instructionsText = this.add.text(this.game.canvas.width/4,100,instructionString,instructionStyle);
+    this.instructionsText.setOrigin(0.5);
   },
 
   update: function (time,delta) {
@@ -97,8 +101,20 @@ let Sisyphus = new Phaser.Class({
 
     anims.msPerFrame = (1 - Math.abs(this.rockForce)) * this.MAX_FRAME_TIME + this.MIN_FRAME_TIME;
 
+    if (anims.currentAnim.key !== 'start') {
+      this.handleInput();
+    }
+  },
+
+  handleInput: function () {
     if (Phaser.Input.Keyboard.JustDown(this.nextKey)) {
       this.timeSinceLastInput = 0;
+      if (this.instructionsText.visible) {
+        this.keyCount++;
+        if (this.keyCount >= this.MIN_KEY_COUNT) {
+          this.instructionsText.visible = false;
+        }
+      }
       this.nextKey = (this.nextKey === this.keyOne) ? this.keyTwo : this.keyOne;
     }
   },
@@ -125,7 +141,7 @@ let Sisyphus = new Phaser.Class({
   createAnimation: function (name,start,end) {
     let frames = this.anims.generateFrameNames('atlas', {
       start: start, end: end, zeroPad: 0,
-      prefix: 'sisyphus/sisyphus_', suffix: '.png'
+      prefix: 'sisyphus/sisyphus/sisyphus_', suffix: '.png'
     });
     let config = {
       key: name,
@@ -134,33 +150,6 @@ let Sisyphus = new Phaser.Class({
       repeat: 0,
     };
     this.anims.create(config);
-  },
-
-  createTopOfHill: function () {
-    let hideRect = new Phaser.Geom.Rectangle(158*4,21*4, 200, 4);
-    let hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
-
-    hideRect = new Phaser.Geom.Rectangle(159*4,20*4, 200, 4);
-    hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
-
-    hideRect = new Phaser.Geom.Rectangle(160*4,19*4, 200, 4);
-    hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
-
-    hideRect = new Phaser.Geom.Rectangle(161*4,18*4, 200, 4);
-    hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
-
-    hideRect = new Phaser.Geom.Rectangle(162*4,17*4, 200, 4);
-    hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
-
-    hideRect = new Phaser.Geom.Rectangle(163*4,0*4, 200, 18*4);
-    hider = this.add.graphics({ fillStyle: { color: 0xaaaaff } });
-    hider.fillRectShape(hideRect);
   }
-
 
 });

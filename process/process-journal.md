@@ -152,7 +152,7 @@ __Phaser__
 
 ---
 
-# Sunday, 13 January 2019, 13:12PM
+# On largely finishing Sisyphus (Sunday, 13 January 2019, 13:12PM)
 
 Reporting in. I've settled into using Phaser 3 and it's going fine with my existing knowledge of version 2. There have been things to learn, but this is such a simple game and the Phaser 3 framework is pretty similar to the previous, so it's not that hard to adjust myself to it. (By the way I resolved the teaching part of this by just not promising to teach Phaser - it was a ridiculous scale of thing to teach anyway.)
 
