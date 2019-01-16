@@ -31,10 +31,14 @@
 
 ### Danaids
 
-- Assemble assets into atlas
-- Create basic scene with assets
-- Add ability to empty tub at any point (may need frames where the wholes have blue in them higher up)
-- Add ability to empty tub while Danaid is in it
+- ~~Assemble base assets into atlas~~
+- ~~Create basic scene with assets~~
+- Create bath animation that can empty from five rows of holes (one per 20% fill from the bucket)
+- Generic empty: play appropriate animation for number of holes (consider separating water from bathtub actually?)
+- Empty while pouring: empty after pour complete
+- Empty while bathing: empty full 100%, then Danaid gets out and goes back to filling
+- Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?
+- Add ability to empty tub at any point
 - Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean?)
 
 ## Tantalus

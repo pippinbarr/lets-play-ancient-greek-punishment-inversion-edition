@@ -181,6 +181,106 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">images/danaids/bath.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>5,3,10,6</rect>
+                <key>scale9Paddings</key>
+                <rect>5,3,10,6</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">images/danaids/bucket.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>1,2,2,3</rect>
+                <key>scale9Paddings</key>
+                <rect>1,2,2,3</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">images/danaids/danaid/danaid_1.png</key>
+            <key type="filename">images/danaids/danaid/danaid_10.png</key>
+            <key type="filename">images/danaids/danaid/danaid_11.png</key>
+            <key type="filename">images/danaids/danaid/danaid_12.png</key>
+            <key type="filename">images/danaids/danaid/danaid_13.png</key>
+            <key type="filename">images/danaids/danaid/danaid_14.png</key>
+            <key type="filename">images/danaids/danaid/danaid_15.png</key>
+            <key type="filename">images/danaids/danaid/danaid_16.png</key>
+            <key type="filename">images/danaids/danaid/danaid_17.png</key>
+            <key type="filename">images/danaids/danaid/danaid_18.png</key>
+            <key type="filename">images/danaids/danaid/danaid_19.png</key>
+            <key type="filename">images/danaids/danaid/danaid_2.png</key>
+            <key type="filename">images/danaids/danaid/danaid_20.png</key>
+            <key type="filename">images/danaids/danaid/danaid_21.png</key>
+            <key type="filename">images/danaids/danaid/danaid_3.png</key>
+            <key type="filename">images/danaids/danaid/danaid_4.png</key>
+            <key type="filename">images/danaids/danaid/danaid_5.png</key>
+            <key type="filename">images/danaids/danaid/danaid_6.png</key>
+            <key type="filename">images/danaids/danaid/danaid_7.png</key>
+            <key type="filename">images/danaids/danaid/danaid_8.png</key>
+            <key type="filename">images/danaids/danaid/danaid_9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>5,5,10,10</rect>
+                <key>scale9Paddings</key>
+                <rect>5,5,10,10</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">images/danaids/entering_bath/entering_bath_1.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_10.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_11.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_2.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_3.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_4.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_5.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_6.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_7.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_8.png</key>
+            <key type="filename">images/danaids/entering_bath/entering_bath_9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>8,10,15,20</rect>
+                <key>scale9Paddings</key>
+                <rect>8,10,15,20</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">images/danaids/tap/tap_1.png</key>
+            <key type="filename">images/danaids/tap/tap_2.png</key>
+            <key type="filename">images/danaids/tap/tap_3.png</key>
+            <key type="filename">images/danaids/tap/tap_4.png</key>
+            <key type="filename">images/danaids/tap/tap_5.png</key>
+            <key type="filename">images/danaids/tap/tap_6.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>3,5,5,9</rect>
+                <key>scale9Paddings</key>
+                <rect>3,5,5,9</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">images/sisyphus/hill.png</key>
             <key type="filename">images/sisyphus/sisyphus/sisyphus_1.png</key>
             <key type="filename">images/sisyphus/sisyphus/sisyphus_10.png</key>
