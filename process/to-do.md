@@ -24,10 +24,31 @@
 - ~~Draw little white dots on ground (seeming to mark start, half-way and finish but actually there to show motion)~~
 - ~~Add ability to move flag with keys~~
 - ~~Add scrolling of the dots and Sisyphus when the flag moves to the right against the edge (until Sisyphus back to max left)~~
+- ~~__ NO__ Contemplate whether a camera that zooms out would be better (but problematic for being non-infinite)~~
+- ~~__THIS WORKS WELL__ Try a version where Zeno can scroll off the left side indefinitely (maybe add one of those little "< ZENO" markers)~~
 
 - Work on feel (quite a lot)
-- Contemplate whether a camera that zooms out would be better (but problematic for being non-infinite)
-- Try a version where Zeno can scroll off the left side indefinitely (maybe add one of those little "< ZENO" markers)
+
+### Danaids
+
+- Assemble assets into atlas
+- Create basic scene with assets
+- Add ability to empty tub at any point (may need frames where the wholes have blue in them higher up)
+- Add ability to empty tub while Danaid is in it
+- Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean?)
+
+## Tantalus
+
+- Assemble assets into atlas (including separating tree, water, Tantalus)
+- Create basic scene with assets
+- Add ability of Tantalus to eat and drink
+- Add ability to move tree or water away with key hold
+
+## Prometheus
+
+- Assemble assets into atlas
+- Create basic scene with assets
+- Work out how the flying part is going to work because it ain't clear yet?
 
 ## Bugs
 

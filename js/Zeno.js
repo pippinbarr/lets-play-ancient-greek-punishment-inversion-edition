@@ -6,7 +6,7 @@ let Zeno = new Phaser.Class({
     Phaser.Scene.call(this, { key: 'zeno' });
 
     this.FLAG_SPEED = 4;
-    this.ZENO_SPEED = 2;
+    this.ZENO_SPEED = 1;
     this.MAX_LEFT = 4*20;
   },
 
@@ -18,8 +18,12 @@ let Zeno = new Phaser.Class({
     this.gameIsOver = false;
 
     // Create the sprite that represents the entire minigame, scale up
-    this.zeno = this.add.sprite(4*20, this.game.canvas.height/2 + 4*15, 'atlas', 'zeno/zeno/zeno_1.png');
+    this.zeno = this.add.sprite(4*10, this.game.canvas.height/2 + 4*15, 'atlas', 'zeno/zeno/zeno_1.png');
     this.zeno.setScale(4,4);
+
+    let zenoIndicatorString = "< ZENO";
+    let zenoIndicatorStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
+    this.zenoIndicatorText = this.add.text(4*6,240,zenoIndicatorString,zenoIndicatorStyle);
 
     this.flag = this.add.sprite(this.game.canvas.width - 4*20, this.game.canvas.height/2 + 4*10, 'atlas', 'zeno/flag.png');
     this.flag.setScale(4,4);
@@ -76,15 +80,10 @@ let Zeno = new Phaser.Class({
       this.flag.x -= this.FLAG_SPEED;
     }
     else if (this.cursors.right.isDown) {
-      if (this.flag.x === this.MAX_RIGHT && this.zeno.x !== this.MAX_LEFT) {
+      if (this.flag.x === this.MAX_RIGHT) {
         this.zeno.x -= this.FLAG_SPEED;
-        if (this.zeno.x <= this.MAX_LEFT) {
-          this.zeno.x = this.MAX_LEFT;
-        }
-        else {
-          this.dot1.x -= this.FLAG_SPEED;
-          this.dot2.x -= this.FLAG_SPEED;
-        }
+        this.dot1.x -= this.FLAG_SPEED;
+        this.dot2.x -= this.FLAG_SPEED;
       }
       else {
         this.flag.x += this.FLAG_SPEED;
@@ -93,8 +92,6 @@ let Zeno = new Phaser.Class({
         }
       }
     }
-    console.log(this.dot1.x);
-    console.log(this.dot2.x);
     if (this.dot1.x < -this.game.canvas.width/2) {
       console.log("Dot 1 off")
       this.dot1.x += this.game.canvas.width;
@@ -106,6 +103,14 @@ let Zeno = new Phaser.Class({
 
   updateZeno: function () {
     this.zeno.x += this.ZENO_SPEED;
+
+    if (this.zeno.x <= 0 - this.zeno.width) {
+      this.zenoIndicatorText.visible = true;
+      this.zenoIndicatorText.text = `< ZENO (${Math.floor(Math.abs(this.zeno.x)/40)}m)`
+    }
+    else {
+      this.zenoIndicatorText.visible = false;
+    }
   },
 
   gameOver: function () {
