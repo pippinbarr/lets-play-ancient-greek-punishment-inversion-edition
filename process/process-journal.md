@@ -161,3 +161,17 @@ At this point I have Sisyphus all but done, which is a good feeling. Some nice m
 Looking ahead I can see there will be various potential issues of separating out animations, because in many of the games the animations are coupled all together (e.g. Tantalus). Given I now need independent control of two elements per scene, it'll often be the case that they need to animate separately (Sisyphus is an exception because he's locked to the boulder). So this project will require some animation stuff, which is fine.
 
 Don't foresee any major bumps as yet. Phaser 3 has come to me faster than expected, which I'm happy about for sure.
+
+---
+
+# On largely finishing Zeno and starting Danaids (Wednesday, 16 January 2019, 7:40AM)
+
+Not a huge amount to report, but just want to keep at least some connection with this journal. I'm writing a little less in it to avoid the feeling that the project is more about writing about the project than making the project, which is something I ended up feeling with the shooting game I abandoned at the end of last year. So I'm not prioritising this journal as much as I have been in order to just 'enjoy' the actual building of the project.
+
+Zeno is now pretty much done. Had a good design moment with it where I felt dissatisfied by the feeling of the flag getting to the far right, scrolling Zeno back, but then just keeping them both on screen. Very limited agency for the flag, and didn't feel all that satisfying as a tormentor, and not especially true to any principle, it was just a kind of arbitrary decision that made sense without necessarily being interesting.
+
+So I've changed that now to the idea that the flag can move arbitrarily far to the right, with Zeno scrolling away off the left and being replaced by an indicator that tells you how far away he is from being back on the screen, as per various racing games for instance. This is satisfying because you still get to see his plodding progress (reflected in the distance creeping down), and so can anticipate his reappearance, but as the flag you can continue to affect him as much as you like. Just realising I didn't include the ability for the flag to move left, so I'll need to put that in. Dangerous since you could collide with him a little easily perhaps. In the end it feels like a more satisfying version of the game with more apparent agency for the player, while still remaining suitably awful for both parties (Zeno and the flag in this case).
+
+I've started the Danaids. Sitting with the assets has clarified what I need to do to make it work I think. Mostly it's just going to be animation management, and a new animation that will allow me to show different amounts of water emptying from the bath. Should go fine, and here the main point of the experience (and perhaps this is true for a bunch of them?) is the comic timing involved - emptying the bath at the last moment etc., but this being played against the indifference of the computer. Maybe computers even like doing this kind of thing? Something to do.
+
+So all's well in this project.

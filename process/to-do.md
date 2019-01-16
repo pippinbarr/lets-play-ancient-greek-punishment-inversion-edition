@@ -27,6 +27,7 @@
 - ~~__ NO__ Contemplate whether a camera that zooms out would be better (but problematic for being non-infinite)~~
 - ~~__THIS WORKS WELL__ Try a version where Zeno can scroll off the left side indefinitely (maybe add one of those little "< ZENO" markers)~~
 
+- Add ability for flag to move left and scroll Zeno back toward his goal (dots go other way)
 - Work on feel (quite a lot)
 
 ### Danaids
