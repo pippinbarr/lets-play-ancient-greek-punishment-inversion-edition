@@ -34,13 +34,17 @@
 
 - ~~Assemble base assets into atlas~~
 - ~~Create basic scene with assets~~
-- Create bath animation that can empty from five rows of holes (one per 20% fill from the bucket)
-- Generic empty: play appropriate animation for number of holes (consider separating water from bathtub actually?)
+- ~~__THIS ISN'T NEEDED__ Create bath animation that can empty from five rows of holes (one per 20% fill from the bucket)~~
+- ~~Get the basic process of the Danaid automatically filling bucket and pouring it into the bath~~
+- ~~Add Danaid getting into bath at 100% full~~
+
+- Get basic emptying working: you press the button, holes appear, water comes out, all water lost
+- Get percentage dependent emptying working (need a special animation that splits water actively coming out from its ending)
 - Empty while pouring: empty after pour complete
 - Empty while bathing: empty full 100%, then Danaid gets out and goes back to filling
 - Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?
 - Add ability to empty tub at any point
-- Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean?)
+- Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)
 
 ## Tantalus
 

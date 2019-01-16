@@ -182,6 +182,15 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">images/danaids/bath.png</key>
+            <key type="filename">images/danaids/bath/bath_1.png</key>
+            <key type="filename">images/danaids/bath/bath_2.png</key>
+            <key type="filename">images/danaids/bath/bath_3.png</key>
+            <key type="filename">images/danaids/bath/bath_4.png</key>
+            <key type="filename">images/danaids/bath/bath_5.png</key>
+            <key type="filename">images/danaids/bath/bath_6.png</key>
+            <key type="filename">images/danaids/bath/bath_7.png</key>
+            <key type="filename">images/danaids/bath/bath_8.png</key>
+            <key type="filename">images/danaids/bath/bath_9.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
