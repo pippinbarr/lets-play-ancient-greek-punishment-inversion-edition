@@ -14,6 +14,7 @@
 - ~~Separate animation elements (ala Limited Edition for efficiency and because I'll have to elsewhere)~~
 - ~~Remove instructions once they've followed them and had an effect~~
 
+- Sound
 - Tweak feel
 
 ### Zeno
@@ -27,6 +28,7 @@
 - ~~__ NO__ Contemplate whether a camera that zooms out would be better (but problematic for being non-infinite)~~
 - ~~__THIS WORKS WELL__ Try a version where Zeno can scroll off the left side indefinitely (maybe add one of those little "< ZENO" markers)~~
 
+- Sound
 - Add ability for flag to move left and scroll Zeno back toward his goal (dots go other way)
 - Work on feel (quite a lot)
 
@@ -37,14 +39,17 @@
 - ~~__THIS ISN'T NEEDED__ Create bath animation that can empty from five rows of holes (one per 20% fill from the bucket)~~
 - ~~Get the basic process of the Danaid automatically filling bucket and pouring it into the bath~~
 - ~~Add Danaid getting into bath at 100% full~~
+- ~~Get basic emptying working: you press the button, holes appear, water comes out, all water lost~~
+- ~~Get percentage dependent emptying working (need a special animation that splits water actively coming out from its ending)~~
+- ~~Empty while pouring: empty after pour complete~~
+- ~~Add ability to empty tub at any point~~
+- ~~__KIND OF JUST WORKS?__ Emptying while about to pour?~~
+- ~~Empty while bathing: empty full 100%, then Danaid gets out and goes back to filling~~
+- ~~Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?~~
+- ~~Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)~~
 
-- Get basic emptying working: you press the button, holes appear, water comes out, all water lost
-- Get percentage dependent emptying working (need a special animation that splits water actively coming out from its ending)
-- Empty while pouring: empty after pour complete
-- Empty while bathing: empty full 100%, then Danaid gets out and goes back to filling
-- Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?
-- Add ability to empty tub at any point
-- Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)
+- Sound
+- Tweaks
 
 ## Tantalus
 
@@ -52,12 +57,14 @@
 - Create basic scene with assets
 - Add ability of Tantalus to eat and drink
 - Add ability to move tree or water away with key hold
+- Sound
 
 ## Prometheus
 
 - Assemble assets into atlas
 - Create basic scene with assets
 - Work out how the flying part is going to work because it ain't clear yet?
+- Sound
 
 ## Bugs
 

@@ -181,7 +181,6 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">images/danaids/bath.png</key>
             <key type="filename">images/danaids/bath/bath_1.png</key>
             <key type="filename">images/danaids/bath/bath_2.png</key>
             <key type="filename">images/danaids/bath/bath_3.png</key>
@@ -200,19 +199,6 @@
                 <rect>5,3,10,6</rect>
                 <key>scale9Paddings</key>
                 <rect>5,3,10,6</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">images/danaids/bucket.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>1,2,2,3</rect>
-                <key>scale9Paddings</key>
-                <rect>1,2,2,3</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

@@ -32,7 +32,7 @@ let Danaids = new Phaser.Class({
     this.tap.anims.play('tap_running');
 
     // Add Danaid
-    this.danaid = this.add.sprite(4*150, this.game.canvas.height/2 + 4*16, 'atlas', 'danaids/danaid/danaid_1.png');
+    this.danaid = this.add.sprite(4*40, this.game.canvas.height/2 + 4*16, 'atlas', 'danaids/danaid/danaid_1.png');
     this.danaid.setScale(4,4);
     this.danaid.vx = 0;
 
@@ -44,10 +44,13 @@ let Danaids = new Phaser.Class({
     this.createAnimation('unpour','danaids/danaid/danaid',11,5,3,0);
     this.createAnimation('put_down_bucket','danaids/danaid/danaid',12,21,5,0);
     this.createAnimation('pick_up_bucket','danaids/danaid/danaid',21,12,5,0);
-    this.createAnimation('enter_bath','danaids/entering_bath/entering_bath',2,11,2,0);
+    this.createAnimation('enter_bath','danaids/entering_bath/entering_bath',2,11,5,0);
+    this.createAnimation('exit_bath','danaids/entering_bath/entering_bath',11,2,5,0);
 
     this.pouring = false;
     this.filling = false;
+    this.inBath = false;
+    this.cleanPercentage = 0;
 
     this.danaid.on('animationcomplete',function (animation,frame) {
       if (animation.key === 'pour') {
@@ -84,21 +87,40 @@ let Danaids = new Phaser.Class({
         this.tap.play('tap_restarting');
         this.danaid.vx = 1;
       }
+      else if (animation.key === 'enter_bath') {
+        this.inBath = true;
+      }
+      else if (animation.key === 'exit_bath') {
+        this.danaid.x -= 4*5;
+        this.danaid.y += 4*10;
+        this.danaid.anims.play('pick_up_bucket');
+      }
     },this);
 
     this.danaid.vx = 1;
     this.danaid.anims.play('running');
 
     // Add bath
-    this.bath = this.add.sprite(this.game.canvas.width - 4*20, this.game.canvas.height/2 + 4*19, 'atlas', 'danaids/bath.png');
+    this.bath = this.add.sprite(this.game.canvas.width - 4*20, this.game.canvas.height/2 + 4*19, 'atlas', 'danaids/bath/bath_9.png');
     this.bath.setScale(4,4);
 
     this.createAnimation('bath_closed','danaids/bath/bath',9,9,10,-1);
     this.createAnimation('bath_open','danaids/bath/bath',1,1,10,-1);
-    this.createAnimation('bath_emptying','danaids/bath/bath',2,8,5,0);
+    this.createAnimation('bath_emptying','danaids/bath/bath',2,6,5,0);
+    this.createAnimation('bath_finish_empty','danaids/bath/bath',6,8,5,0);
+
+    this.bath.on('animationcomplete',function (animation,frame) {
+      if (animation.key === 'bath_finish_empty') {
+        console.log("Here")
+        this.bath.anims.play('bath_open');
+      }
+    },this);
+
+    this.bath.anims.play('bath_closed');
 
     this.bath.anims.play('bath_closed');
     this.holesOpen = false;
+    this.emptying = false;
     this.fullPercentage = 80;
     this.currentPourAmount = 0;
     this.fillTime = 0;
@@ -121,8 +143,15 @@ let Danaids = new Phaser.Class({
     // Add bath percentage information
     let informationStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#fff', wordWrap: true, align: 'center' };
     let informationString = "BATH FULL: 0%";
-    this.informationText = this.add.text(3*this.game.canvas.width/4,340,informationString,informationStyle);
-    this.informationText.setOrigin(0.5);
+    this.informationText = this.add.text(this.game.canvas.width - 350,320,informationString,informationStyle);
+    this.informationText.setOrigin(0);
+
+    // Add bath percentage information
+    let danaidInformationStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'left' };
+    let danaidInformationString = "CLEANLINESS: 0%";
+    this.danaidInformationText = this.add.text(this.game.canvas.width - 440,230,danaidInformationString,danaidInformationStyle);
+    this.danaidInformationText.setOrigin(0);
+    this.danaidInformationText.visible = false;
 
   },
 
@@ -134,23 +163,23 @@ let Danaids = new Phaser.Class({
     this.updateDanaid(delta);
     this.updateBath(delta);
 
-    if (false) {
-      this.gameIsOver = true;
-      setTimeout(() => {
-        this.gameOver();
-      },1250);
-    }
   },
 
   handleInput: function () {
     if (Phaser.Input.Keyboard.JustDown(this.spaceBar)) {
+
+      if (this.emptying) return;
+      if (this.pouring) return;
+
       if (this.holesOpen) {
         this.holesOpen = false;
         this.bath.play('bath_closed');
       }
       else {
         this.holesOpen = true;
-        this.bath.play('bath_open');
+        if (this.fullPercentage === 0) {
+          this.bath.play('bath_open');
+        }
       }
     }
   },
@@ -177,7 +206,29 @@ let Danaids = new Phaser.Class({
       if (this.fillTime > this.MAX_FILL_TIME) {
         this.danaid.anims.play('lower_bucket');
         this.filling = false;
+        this.fillTime = 0;
       }
+    }
+
+    if (this.inBath) {
+      if (this.fullPercentage === 0) {
+        this.danaid.anims.play('exit_bath');
+        this.cleanPercentage = 0;
+        this.danaidInformationText.visible = false;
+        this.inBath = false;
+      }
+      else if (this.fullPercentage === 100) {
+        this.danaidInformationText.visible = true;
+        this.cleanPercentage += 0.25;
+        if (this.cleanPercentage >= 100) {
+          this.cleanPercentage = 100;
+          this.gameIsOver = true;
+          setTimeout(() => {
+            this.gameOver();
+          },1250);
+        }
+      }
+      this.danaidInformationText.text = `CLEANLINESS: ${Math.floor(this.cleanPercentage)}%`
     }
 
   },
@@ -187,13 +238,23 @@ let Danaids = new Phaser.Class({
 
     if (this.pouring) {
       this.currentPourAmount++;
-
       if (this.currentPourAmount === this.FILL_PER_POUR) {
         this.fullPercentage += this.FILL_PER_POUR;
         this.currentPourAmount = 0;
         this.danaid.anims.play('unpour');
         this.pouring = false;
       }
+    }
+    else if (this.emptying) {
+      this.fullPercentage--;
+      if (this.fullPercentage === 0) {
+        this.emptying = false;
+        this.bath.anims.play('bath_finish_empty');
+      }
+    }
+    else if (this.holesOpen && this.fullPercentage > 0) {
+      this.emptying = true;
+      this.bath.anims.play('bath_emptying');
     }
 
     this.informationText.text = `BATH FULL: ${this.fullPercentage + this.currentPourAmount}%`;
