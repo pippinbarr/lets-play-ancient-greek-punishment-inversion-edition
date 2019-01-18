@@ -11,7 +11,7 @@ let Preloader = new Phaser.Class({
     },
 
     create: function () {
-        this.scene.start('tantalus');
+        this.scene.start('menu');
     }
 
 });
