@@ -1207,7 +1207,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_12.png",
+					"filename": "tantalus/drinking_fail/drinking_fail_5.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -1375,7 +1375,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_6.png",
+					"filename": "tantalus/eating_fail/eating_fail_6.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -1396,7 +1396,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_7.png",
+					"filename": "tantalus/eating_fail/eating_fail_7.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2551,7 +2551,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_2.png",
+					"filename": "tantalus/eating_fail/eating_fail_2.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2572,7 +2572,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_3.png",
+					"filename": "tantalus/eating_fail/eating_fail_3.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2593,7 +2593,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_4.png",
+					"filename": "tantalus/eating_fail/eating_fail_4.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2614,7 +2614,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_5.png",
+					"filename": "tantalus/eating_fail/eating_fail_5.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2845,7 +2845,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_13.png",
+					"filename": "tantalus/drinking_fail/drinking_fail_6.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2887,7 +2887,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_1.png",
+					"filename": "tantalus/eating_fail/eating_fail_1.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2908,28 +2908,28 @@
 					}
 				},
 				{
-					"filename": "tantalus/eating/eating_10.png",
+					"filename": "tantalus/tantalus.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 25,
-						"h": 25
+						"w": 100,
+						"h": 50
 					},
 					"spriteSourceSize": {
-						"x": 9,
-						"y": 4,
-						"w": 11,
+						"x": 44,
+						"y": 19,
+						"w": 12,
 						"h": 21
 					},
 					"frame": {
 						"x": 1021,
 						"y": 70,
-						"w": 11,
+						"w": 12,
 						"h": 21
 					}
 				},
 				{
-					"filename": "tantalus/eating/eating_11.png",
+					"filename": "tantalus/eating/eating_10.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2950,7 +2950,7 @@
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_14.png",
+					"filename": "tantalus/drinking_fail/drinking_fail_7.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2971,6 +2971,27 @@
 					}
 				},
 				{
+					"filename": "tantalus/eating/eating_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 4,
+						"w": 11,
+						"h": 21
+					},
+					"frame": {
+						"x": 1035,
+						"y": 47,
+						"w": 11,
+						"h": 21
+					}
+				},
+				{
 					"filename": "tantalus/eating/eating_12.png",
 					"rotated": false,
 					"trimmed": true,
@@ -2985,8 +3006,8 @@
 						"h": 21
 					},
 					"frame": {
-						"x": 1034,
-						"y": 70,
+						"x": 1042,
+						"y": 24,
 						"w": 11,
 						"h": 21
 					}
@@ -3006,8 +3027,8 @@
 						"h": 21
 					},
 					"frame": {
-						"x": 1038,
-						"y": 93,
+						"x": 1035,
+						"y": 70,
 						"w": 11,
 						"h": 21
 					}
@@ -3027,29 +3048,8 @@
 						"h": 21
 					},
 					"frame": {
-						"x": 1035,
-						"y": 47,
-						"w": 10,
-						"h": 21
-					}
-				},
-				{
-					"filename": "tantalus/eating/eating_14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 25
-					},
-					"spriteSourceSize": {
-						"x": 9,
-						"y": 4,
-						"w": 10,
-						"h": 21
-					},
-					"frame": {
-						"x": 1042,
-						"y": 24,
+						"x": 1038,
+						"y": 93,
 						"w": 10,
 						"h": 21
 					}
@@ -3076,6 +3076,27 @@
 					}
 				},
 				{
+					"filename": "tantalus/eating/eating_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 4,
+						"w": 10,
+						"h": 21
+					},
+					"frame": {
+						"x": 1048,
+						"y": 47,
+						"w": 10,
+						"h": 21
+					}
+				},
+				{
 					"filename": "tantalus/eating/eating_15.png",
 					"rotated": false,
 					"trimmed": true,
@@ -3090,8 +3111,8 @@
 						"h": 21
 					},
 					"frame": {
-						"x": 1047,
-						"y": 47,
+						"x": 1055,
+						"y": 24,
 						"w": 10,
 						"h": 21
 					}
@@ -3111,8 +3132,8 @@
 						"h": 21
 					},
 					"frame": {
-						"x": 1054,
-						"y": 24,
+						"x": 1048,
+						"y": 70,
 						"w": 10,
 						"h": 21
 					}
@@ -3132,8 +3153,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1047,
-						"y": 70,
+						"x": 1050,
+						"y": 93,
 						"w": 27,
 						"h": 20
 					}
@@ -3153,7 +3174,7 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1059,
+						"x": 1060,
 						"y": 47,
 						"w": 17,
 						"h": 20
@@ -3174,7 +3195,7 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1066,
+						"x": 1067,
 						"y": 24,
 						"w": 17,
 						"h": 20
@@ -3195,8 +3216,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1051,
-						"y": 92,
+						"x": 1060,
+						"y": 69,
 						"w": 16,
 						"h": 20
 					}
@@ -3216,8 +3237,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1069,
-						"y": 92,
+						"x": 1078,
+						"y": 69,
 						"w": 15,
 						"h": 20
 					}
@@ -3237,8 +3258,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1076,
-						"y": 69,
+						"x": 1079,
+						"y": 46,
 						"w": 14,
 						"h": 20
 					}
@@ -3258,35 +3279,14 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1078,
-						"y": 46,
-						"w": 14,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 14,
-						"h": 20
-					},
-					"frame": {
-						"x": 1085,
+						"x": 1086,
 						"y": 24,
 						"w": 14,
 						"h": 20
 					}
 				},
 				{
-					"filename": "danaids/danaid/danaid_15.png",
+					"filename": "danaids/danaid/danaid_14.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3307,7 +3307,7 @@
 					}
 				},
 				{
-					"filename": "danaids/danaid/danaid_7.png",
+					"filename": "danaids/danaid/danaid_15.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3321,93 +3321,9 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1086,
+						"x": 1079,
 						"y": 91,
 						"w": 14,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 13,
-						"h": 20
-					},
-					"frame": {
-						"x": 1092,
-						"y": 68,
-						"w": 13,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 13,
-						"h": 20
-					},
-					"frame": {
-						"x": 1094,
-						"y": 46,
-						"w": 13,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 13,
-						"h": 20
-					},
-					"frame": {
-						"x": 1101,
-						"y": 23,
-						"w": 13,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/entering_bath/entering_bath_2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 30,
-						"h": 40
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 20,
-						"w": 13,
-						"h": 20
-					},
-					"frame": {
-						"x": 1109,
-						"y": 1,
-						"w": 13,
 						"h": 20
 					}
 				},
@@ -3433,7 +3349,7 @@
 					}
 				},
 				{
-					"filename": "danaids/danaid/danaid_2.png",
+					"filename": "danaids/danaid/danaid_7.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3443,18 +3359,39 @@
 					"spriteSourceSize": {
 						"x": 3,
 						"y": 0,
-						"w": 12,
+						"w": 14,
+						"h": 20
+					},
+					"frame": {
+						"x": 1095,
+						"y": 46,
+						"w": 14,
+						"h": 20
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 13,
 						"h": 20
 					},
 					"frame": {
 						"x": 1102,
-						"y": 90,
-						"w": 12,
+						"y": 23,
+						"w": 13,
 						"h": 20
 					}
 				},
 				{
-					"filename": "danaids/danaid/danaid_3.png",
+					"filename": "danaids/danaid/danaid_21.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3464,76 +3401,55 @@
 					"spriteSourceSize": {
 						"x": 3,
 						"y": 0,
-						"w": 12,
-						"h": 20
-					},
-					"frame": {
-						"x": 1107,
-						"y": 68,
-						"w": 12,
-						"h": 20
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 12,
+						"w": 13,
 						"h": 20
 					},
 					"frame": {
 						"x": 1109,
-						"y": 45,
-						"w": 12,
-						"h": 20
-					}
-				},
-				{
-					"filename": "tantalus/drinking/water_2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 25
-					},
-					"spriteSourceSize": {
-						"x": 7,
-						"y": 5,
-						"w": 12,
-						"h": 20
-					},
-					"frame": {
-						"x": 1116,
-						"y": 23,
-						"w": 12,
-						"h": 20
-					}
-				},
-				{
-					"filename": "tantalus/tantlus-fails/tantalus_8.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 100,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 43,
-						"y": 20,
-						"w": 12,
-						"h": 20
-					},
-					"frame": {
-						"x": 1124,
 						"y": 1,
-						"w": 12,
+						"w": 13,
+						"h": 20
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 13,
+						"h": 20
+					},
+					"frame": {
+						"x": 1095,
+						"y": 68,
+						"w": 13,
+						"h": 20
+					}
+				},
+				{
+					"filename": "danaids/entering_bath/entering_bath_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 30,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 20,
+						"w": 13,
+						"h": 20
+					},
+					"frame": {
+						"x": 1095,
+						"y": 90,
+						"w": 13,
 						"h": 20
 					}
 				},
@@ -3559,6 +3475,111 @@
 					}
 				},
 				{
+					"filename": "danaids/danaid/danaid_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 12,
+						"h": 20
+					},
+					"frame": {
+						"x": 1110,
+						"y": 68,
+						"w": 12,
+						"h": 20
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 12,
+						"h": 20
+					},
+					"frame": {
+						"x": 1110,
+						"y": 90,
+						"w": 12,
+						"h": 20
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 12,
+						"h": 20
+					},
+					"frame": {
+						"x": 1111,
+						"y": 45,
+						"w": 12,
+						"h": 20
+					}
+				},
+				{
+					"filename": "tantalus/drinking/water_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 5,
+						"w": 12,
+						"h": 20
+					},
+					"frame": {
+						"x": 1117,
+						"y": 23,
+						"w": 12,
+						"h": 20
+					}
+				},
+				{
+					"filename": "tantalus/drinking_fail/drinking_fail_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 20,
+						"w": 12,
+						"h": 20
+					},
+					"frame": {
+						"x": 1124,
+						"y": 1,
+						"w": 12,
+						"h": 20
+					}
+				},
+				{
 					"filename": "zeno/zeno/zeno_1.png",
 					"rotated": false,
 					"trimmed": true,
@@ -3573,8 +3594,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1116,
-						"y": 90,
+						"x": 1124,
+						"y": 67,
 						"w": 11,
 						"h": 20
 					}
@@ -3594,8 +3615,8 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1121,
-						"y": 67,
+						"x": 1125,
+						"y": 45,
 						"w": 11,
 						"h": 20
 					}
@@ -3615,35 +3636,14 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1123,
-						"y": 45,
+						"x": 1131,
+						"y": 23,
 						"w": 10,
 						"h": 20
 					}
 				},
 				{
 					"filename": "zeno/zeno/zeno_2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 7,
-						"y": 2,
-						"w": 9,
-						"h": 20
-					},
-					"frame": {
-						"x": 1130,
-						"y": 23,
-						"w": 9,
-						"h": 20
-					}
-				},
-				{
-					"filename": "zeno/zeno/zeno_3.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3664,24 +3664,45 @@
 					}
 				},
 				{
-					"filename": "danaids/bath/bath_2.png",
+					"filename": "zeno/zeno/zeno_3.png",
 					"rotated": false,
-					"trimmed": false,
+					"trimmed": true,
 					"sourceSize": {
 						"w": 20,
-						"h": 12
+						"h": 22
 					},
 					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 12
+						"x": 7,
+						"y": 2,
+						"w": 9,
+						"h": 20
 					},
 					"frame": {
 						"x": 1124,
-						"y": 112,
-						"w": 20,
-						"h": 12
+						"y": 89,
+						"w": 9,
+						"h": 20
+					}
+				},
+				{
+					"filename": "tantalus/branch/branch_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 0,
+						"w": 34,
+						"h": 16
+					},
+					"frame": {
+						"x": 1124,
+						"y": 111,
+						"w": 34,
+						"h": 16
 					}
 				},
 				{
@@ -3699,7 +3720,7 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1129,
+						"x": 1135,
 						"y": 89,
 						"w": 9,
 						"h": 20
@@ -3720,7 +3741,7 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 1134,
+						"x": 1137,
 						"y": 67,
 						"w": 9,
 						"h": 20
@@ -3741,10 +3762,31 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 1135,
-						"y": 45,
+						"x": 1146,
+						"y": 89,
 						"w": 34,
 						"h": 19
+					}
+				},
+				{
+					"filename": "tantalus/branch/branch_no_apple_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 0,
+						"w": 34,
+						"h": 16
+					},
+					"frame": {
+						"x": 1160,
+						"y": 110,
+						"w": 34,
+						"h": 16
 					}
 				},
 				{
@@ -3762,8 +3804,8 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 1141,
-						"y": 23,
+						"x": 1138,
+						"y": 45,
 						"w": 13,
 						"h": 19
 					}
@@ -3783,8 +3825,8 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 1149,
-						"y": 1,
+						"x": 1143,
+						"y": 23,
 						"w": 12,
 						"h": 19
 					}
@@ -3804,14 +3846,35 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 1156,
-						"y": 22,
+						"x": 1149,
+						"y": 1,
 						"w": 12,
 						"h": 19
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_9.png",
+					"filename": "danaids/bath/bath_2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 12
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 12
+					},
+					"frame": {
+						"x": 1196,
+						"y": 1,
+						"w": 20,
+						"h": 12
+					}
+				},
+				{
+					"filename": "tantalus/drinking_fail/drinking_fail_2.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -3825,220 +3888,10 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 1163,
-						"y": 1,
-						"w": 12,
-						"h": 19
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 1,
-						"w": 10,
-						"h": 19
-					},
-					"frame": {
-						"x": 1170,
-						"y": 22,
-						"w": 10,
-						"h": 19
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 2,
-						"w": 13,
-						"h": 18
-					},
-					"frame": {
-						"x": 1177,
-						"y": 1,
-						"w": 13,
-						"h": 18
-					}
-				},
-				{
-					"filename": "tantalus/branch/branch_4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 100,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 0,
-						"w": 34,
-						"h": 16
-					},
-					"frame": {
 						"x": 1182,
-						"y": 21,
-						"w": 34,
-						"h": 16
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 2,
-						"w": 12,
-						"h": 18
-					},
-					"frame": {
-						"x": 1192,
 						"y": 1,
 						"w": 12,
-						"h": 18
-					}
-				},
-				{
-					"filename": "danaids/tap/tap_1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 10,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 10,
-						"h": 18
-					},
-					"frame": {
-						"x": 1206,
-						"y": 1,
-						"w": 10,
-						"h": 18
-					}
-				},
-				{
-					"filename": "tantalus/branch/branch_no_apple_1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 100,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 0,
-						"w": 34,
-						"h": 16
-					},
-					"frame": {
-						"x": 1182,
-						"y": 39,
-						"w": 34,
-						"h": 16
-					}
-				},
-				{
-					"filename": "danaids/tap/tap_2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 10,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 9,
-						"h": 18
-					},
-					"frame": {
-						"x": 1171,
-						"y": 43,
-						"w": 9,
-						"h": 18
-					}
-				},
-				{
-					"filename": "danaids/danaid/danaid_19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 2,
-						"w": 12,
-						"h": 18
-					},
-					"frame": {
-						"x": 1140,
-						"y": 89,
-						"w": 12,
-						"h": 18
-					}
-				},
-				{
-					"filename": "danaids/tap/tap_3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 10,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 10,
-						"h": 18
-					},
-					"frame": {
-						"x": 1146,
-						"y": 109,
-						"w": 10,
-						"h": 18
-					}
-				},
-				{
-					"filename": "danaids/tap/tap_6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 10,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 7,
-						"h": 18
-					},
-					"frame": {
-						"x": 1145,
-						"y": 66,
-						"w": 7,
-						"h": 18
+						"h": 19
 					}
 				},
 				{
@@ -4056,10 +3909,31 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1182,
-						"y": 57,
+						"x": 1196,
+						"y": 15,
 						"w": 20,
 						"h": 12
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 2,
+						"w": 12,
+						"h": 18
+					},
+					"frame": {
+						"x": 1182,
+						"y": 22,
+						"w": 12,
+						"h": 18
 					}
 				},
 				{
@@ -4077,73 +3951,31 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1158,
-						"y": 66,
+						"x": 1196,
+						"y": 29,
 						"w": 20,
 						"h": 12
 					}
 				},
 				{
-					"filename": "tantalus/drinking/water_4.png",
+					"filename": "danaids/danaid/danaid_19.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 25,
-						"h": 25
+						"w": 20,
+						"h": 20
 					},
 					"spriteSourceSize": {
-						"x": 2,
-						"y": 9,
-						"w": 14,
-						"h": 16
+						"x": 4,
+						"y": 2,
+						"w": 12,
+						"h": 18
 					},
 					"frame": {
-						"x": 1154,
-						"y": 80,
-						"w": 14,
-						"h": 16
-					}
-				},
-				{
-					"filename": "tantalus/drinking/water_5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 25
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 9,
-						"w": 14,
-						"h": 16
-					},
-					"frame": {
-						"x": 1158,
-						"y": 98,
-						"w": 14,
-						"h": 16
-					}
-				},
-				{
-					"filename": "tantalus/tantlus-fails/tantalus_10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 100,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 38,
-						"y": 24,
-						"w": 14,
-						"h": 16
-					},
-					"frame": {
-						"x": 1170,
-						"y": 80,
-						"w": 14,
-						"h": 16
+						"x": 1182,
+						"y": 42,
+						"w": 12,
+						"h": 18
 					}
 				},
 				{
@@ -4161,8 +3993,8 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1186,
-						"y": 71,
+						"x": 1196,
+						"y": 43,
 						"w": 20,
 						"h": 12
 					}
@@ -4182,9 +4014,93 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1186,
-						"y": 85,
+						"x": 1196,
+						"y": 57,
 						"w": 20,
+						"h": 12
+					}
+				},
+				{
+					"filename": "tantalus/drinking/water_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 9,
+						"w": 14,
+						"h": 16
+					},
+					"frame": {
+						"x": 1148,
+						"y": 71,
+						"w": 14,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tantalus/drinking/water_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 9,
+						"w": 14,
+						"h": 16
+					},
+					"frame": {
+						"x": 1164,
+						"y": 71,
+						"w": 14,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tantalus/drinking_fail/drinking_fail_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 38,
+						"y": 24,
+						"w": 14,
+						"h": 16
+					},
+					"frame": {
+						"x": 1180,
+						"y": 62,
+						"w": 14,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tantalus/drinking_fail/drinking_fail_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 37,
+						"y": 28,
+						"w": 15,
+						"h": 12
+					},
+					"frame": {
+						"x": 1163,
+						"y": 1,
+						"w": 15,
 						"h": 12
 					}
 				},
@@ -4203,8 +4119,8 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1174,
-						"y": 99,
+						"x": 1157,
+						"y": 22,
 						"w": 20,
 						"h": 12
 					}
@@ -4224,10 +4140,52 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1196,
-						"y": 99,
+						"x": 1157,
+						"y": 36,
 						"w": 20,
 						"h": 12
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 1,
+						"w": 10,
+						"h": 19
+					},
+					"frame": {
+						"x": 1153,
+						"y": 50,
+						"w": 10,
+						"h": 19
+					}
+				},
+				{
+					"filename": "danaids/danaid/danaid_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 2,
+						"w": 13,
+						"h": 18
+					},
+					"frame": {
+						"x": 1165,
+						"y": 50,
+						"w": 13,
+						"h": 18
 					}
 				},
 				{
@@ -4245,31 +4203,94 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 1174,
-						"y": 113,
+						"x": 1196,
+						"y": 71,
 						"w": 20,
 						"h": 12
 					}
 				},
 				{
-					"filename": "tantalus/tantlus-fails/tantalus_11.png",
+					"filename": "danaids/tap/tap_1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 18
+					},
+					"frame": {
+						"x": 1182,
+						"y": 80,
+						"w": 10,
+						"h": 18
+					}
+				},
+				{
+					"filename": "danaids/tap/tap_3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 18
+					},
+					"frame": {
+						"x": 1194,
+						"y": 85,
+						"w": 10,
+						"h": 18
+					}
+				},
+				{
+					"filename": "danaids/tap/tap_2.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 100,
-						"h": 50
+						"w": 10,
+						"h": 18
 					},
 					"spriteSourceSize": {
-						"x": 37,
-						"y": 28,
-						"w": 15,
-						"h": 12
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 18
+					},
+					"frame": {
+						"x": 1206,
+						"y": 85,
+						"w": 9,
+						"h": 18
+					}
+				},
+				{
+					"filename": "danaids/tap/tap_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 10,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 7,
+						"h": 18
 					},
 					"frame": {
 						"x": 1196,
-						"y": 113,
-						"w": 15,
-						"h": 12
+						"y": 105,
+						"w": 7,
+						"h": 18
 					}
 				}
 			]
@@ -4278,6 +4299,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:3947e89abac95cf2c7336fae39a0be99:534c12c2fc2c0f48720ccba3bce1c2d9:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:fcaf405933d9873d209ad5897438266a:dab5852cfc90c902ce063e58a2418c0c:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }

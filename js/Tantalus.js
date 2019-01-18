@@ -11,18 +11,31 @@ let Tantalus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    this.tantalus = this.add.sprite(400,200,'atlas','tantalus/tantalus.png');
+    this.tantalus.setScale(8,8);
+
+    this.branch = this.add.sprite(400,200,'atlas','tantalus/branch/branch_1.png');
+    this.branch.setScale(8,8);
+
+    this.water = this.add.sprite(400,200,'atlas','tantalus/water/water_1.png');
+    this.water.setScale(8,8);
+
+    this.ground = this.add.sprite(400,200,'atlas','tantalus/ground.png');
+    this.ground.setScale(8,8);
+
     // Add key control
-    this.spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    this.g = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
+    this.h = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.H);
 
     // Add instructions
-    let appleInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
-    let appleInstructionString = "YOU ARE THE TREE\nHOLDS G TO\nRAISE YOUR BRANCH";
+    let appleInstructionStyle = { fontFamily: 'Commodore', fontSize: '20px', fill: '#000', wordWrap: true, align: 'center' };
+    let appleInstructionString = "YOU ARE THE APPLE\nHOLD G TO\nLIFT YOUR BRANCH";
     this.appleInstructionsText = this.add.text(3*this.game.canvas.width/4,100,appleInstructionString,appleInstructionStyle);
     this.appleInstructionsText.setOrigin(0.5);
 
-    let waterInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
+    let waterInstructionStyle = { fontFamily: 'Commodore', fontSize: '20px', fill: '#fff', wordWrap: true, align: 'center' };
     let waterInstructionString = "YOU ARE THE WATER\nHOLD H TO\nLOWER YOUR LEVEL";
-    this.waterInstructionsText = this.add.text(3*this.game.canvas.width/4,100,waterInstructionString,waterInstructionStyle);
+    this.waterInstructionsText = this.add.text(400,360,waterInstructionString,waterInstructionStyle);
     this.waterInstructionsText.setOrigin(0.5);
 
   },
@@ -35,7 +48,7 @@ let Tantalus = new Phaser.Class({
   },
 
   handleInput: function () {
-    if (Phaser.Input.Keyboard.JustDown(this.spaceBar)) {
+    if (Phaser.Input.Keyboard.JustDown(this.g)) {
 
     }
   },
