@@ -48,12 +48,14 @@
 - ~~Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?~~
 - ~~Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)~~
 
+- Change controls so that you open holes, it empties (or not) and then they close again (to avoid the situation of just leaving the holes open indefinitely and thus not needing to stay on guard and punish)
 - Sound
 - Tweaks
 
 ## Tantalus
 
-- Assemble assets into atlas (including separating tree, water, Tantalus)
+- ~~Assemble assets into atlas (including separating tree, water, Tantalus)~~
+
 - Create basic scene with assets
 - Add ability of Tantalus to eat and drink
 - Add ability to move tree or water away with key hold
