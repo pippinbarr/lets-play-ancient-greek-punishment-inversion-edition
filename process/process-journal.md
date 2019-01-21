@@ -175,3 +175,33 @@ So I've changed that now to the idea that the flag can move arbitrarily far to t
 I've started the Danaids. Sitting with the assets has clarified what I need to do to make it work I think. Mostly it's just going to be animation management, and a new animation that will allow me to show different amounts of water emptying from the bath. Should go fine, and here the main point of the experience (and perhaps this is true for a bunch of them?) is the comic timing involved - emptying the bath at the last moment etc., but this being played against the indifference of the computer. Maybe computers even like doing this kind of thing? Something to do.
 
 So all's well in this project.
+
+---
+
+# On having finishedish Danaids and Tantalus, and sighing about Prometheus, then maybe "solving" it? (Monday, 21 January 2019, 15:50PM)
+
+Just checking in here in process-land. Most of my time on the project for the last while has been pretty much focused on just getting the "obvious" stuff to work, including working out what's "obvious" when it appears in front of my face. As always, development itself is a big asker of questions. Such as
+
+- What should happen if you lower the branch with the apple while Tantalus is reaching for it?
+- What if you raise the water while Tantalus is stooped so it goes over his head?
+- More generally, what are the dynamics with Tantalus? How in control should you be? What's "fair"?
+- How the fuck should I deal with the eagle landing on Prometheus and pecking? In terms of the beautiful expressivity of flight? In terms of the control scheme?
+- And such
+
+I mean, you could think your way into these question beforehand too, but there's nothing like actually needing to write lines of code to crystallise the fact something is a problem.
+
+__Tantalus__
+
+Surprisingly problematic in terms of "subtle" interactions between your actions and his - it create the possibility for numerous different times of overlapping animations that could signify and important moment, most notably how to respond to the player "letting go" in the middle of Tantalus' attempts to reach something. Particularly in terms of drinking because of the various levels the water can be at. And the fact I (stupidly?) made the water animate faster when it goes down (because it looks funnier?). Maybe there's a solution somewhere in the framerates?
+
+__Prometheus__
+
+Remains the most difficult one to conceptualise because the flying is such a big open question. I think it's clear I can't just allow arbitrary flying? Can I? Maybe I can? With screen wrap? With a buffer around everything except Prometheus legs as a landing spot? Weird. Maybe that would conceivably work? Plus getting kicked up into the air if he struggles. Plus not being able to fly off the top? How would I define the area you're actually allowed to fly in? What about the two sides of the rock? God what a boring proposition it is to figure stuff like this out. On the other hand it feels truer to the situation than just an 'on rails' approach to the landing process? Like if you're going to 'be the eagle' you need to feel like you have the agency to fly around and then choose when you're going to land and peck?
+
+Thinking as a player for a moment: they are totally going to want to land on his face, aren't they. Ugh. Players. But you would. You would want to do that. And if you can land elsewhere why not there? Ass.
+
+So a semi compromise would be: hotspots on the rock and Prometheus. If you enter one of these you land in a forced position (facing a direction that makes sense) - so it's a snap-to-land situation. For the rest you fly around, can't go off the bottom, wrap on the sides (if liver still 100%), and can't go off the top? This will be annoying to write in terms of hard-coding all the locations involved (unlesssssss I use images to designate the positions? Or will that work? Perhaps not. I don't know what the hitboxes for overlaps would be for sprites defined as the size of the screen - suspect it won't work. Yeah going with no.)
+
+Okay, so hardcoding landing positions, constraining in the other ways. May need some other contextual instructions if people get cute (e.g. what to do if they land on Prometheus' face? Just nothing and they keep flying until they land on his damn leg area and can peck? Fair. Fair. Or they can peck from there, but it doesn't hit his liver? Gross and weird. But semi funny. Can cross that bridge when I come to it.)
+
+Okay this will do.

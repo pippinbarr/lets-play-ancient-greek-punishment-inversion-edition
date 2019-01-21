@@ -66,9 +66,15 @@
 
 ## Prometheus
 
+- ~~Work out how the flying part is going to work because it ain't clear yet?~~
+
 - Assemble assets into atlas
 - Create basic scene with assets
-- Work out how the flying part is going to work because it ain't clear yet?
+- Enable free-form flying around
+- Constrain flying based on wrap and no-exit for sides and top respectively
+- Create hotspots for snap-to-landing
+- Enable pecking
+- Enable auto-struggle
 - Sound
 
 ## Bugs
