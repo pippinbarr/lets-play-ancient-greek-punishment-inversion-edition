@@ -58,8 +58,10 @@
 - ~~Create basic scene with assets~~
 - ~~Add ability of Tantalus to eat and drink~~
 - ~~Add ability to move tree or water away with key hold~~
+- ~~Automate Tantalus to reach and stoop randomly~~
 
-- Automate Tantalus to reach and stoop randomly
+- Handle scenario where he's reaching and you lower the branch (he should grab the apple right?)
+- Handle scenario where he's stooping or unstooping and you raise the water (he should unstoop and drink the water right?) (or should it simply be that if the water goes over his head he just drinks it? How can I tell?)
 - Sound
 
 ## Prometheus
@@ -73,3 +75,4 @@
 
 - TTF font doesn't always display, vanishes after hard reload (no cache), drops back to Times or similar
   - Seems to rectify when you load the next scene (Sisyphus always has correct font, even when Menu doesn't)
+  - I've actually seen it break on the second scene too now, but very rare - what is this??

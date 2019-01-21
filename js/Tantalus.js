@@ -4,6 +4,12 @@ let Tantalus = new Phaser.Class({
 
   initialize: function Tantalus () {
     Phaser.Scene.call(this, { key: 'tantalus' });
+
+    this.ACTION_MIN_DELAY = 1000;
+    this.ACTION_DELAY_RANGE = 2000;
+    this.ACTION_MIN_PERFORM = 1000;
+    this.ACTION_PERFORM_RANGE = 2000;
+
   },
 
   create: function () {
@@ -17,34 +23,50 @@ let Tantalus = new Phaser.Class({
     this.tantalus = this.add.sprite(400,200,'atlas','tantalus/tantalus.png');
     this.tantalus.setScale(8,8);
 
+    // - State variables
+    this.acting = false;
+
     // - Animations
     this.createAnimation('tantalus_idle','tantalus/reaching/reaching',1,1,5,-1);
 
     this.createAnimation('reach','tantalus/reaching/reaching',1,5,5,0);
-    this.createAnimation('eating_fail_loop','tantalus/eating_fail/eating_fail',1,2,5,-1);
+    this.createAnimation('unreach','tantalus/reaching/reaching',5,1,5,0);
+    this.createAnimation('eating_fail','tantalus/eating_fail/eating_fail',1,2,5,6);
     this.createAnimation('eating','tantalus/eating/eating',1,18,5,0);
 
     this.createAnimation('stoop','tantalus/stooping/stooping',1,3,5,0);
     this.createAnimation('unstoop','tantalus/stooping/stooping',3,1,5,0);
     this.createAnimation('undrinking_fail','tantalus/drinking_fail/drinking_fail',0,1,5,0);
     this.createAnimation('drinking_fail','tantalus/drinking_fail/drinking_fail',1,3,5,0);
-    this.createAnimation('drinking','tantalus/drinking/drinking',1,2,5,-1);
+    this.createAnimation('drinking','tantalus/drinking/drinking',1,2,5,6);
 
     this.tantalus.anims.play('tantalus_idle');
 
-    this.stoop();
+    this.delayAction();
 
     // - Animation complete events
     this.tantalus.on('animationcomplete',function (animation,frame) {
-      if (animation.key === 'reach') {
+
+      switch(animation.key) {
+        case 'reach':
         if (this.branchUp || this.branchRaising) {
-          this.tantalus.anims.play('eating_fail_loop');
+          this.tantalus.anims.play('eating_fail');
         }
         else {
           this.eat();
         }
-      }
-      else if (animation.key === 'stoop') {
+        break;
+
+        case 'eating_fail':
+        this.tantalus.anims.play('unreach');
+        break;
+
+        case 'unreach':
+        this.tantalus.anims.play('tantalus_idle');
+        this.delayAction();
+        break;
+
+        case 'stoop':
         if (this.waterDown || this.waterLowering) {
           this.tantalus.anims.play('drinking_fail');
           this.tantalus.x += 1*8;
@@ -53,14 +75,35 @@ let Tantalus = new Phaser.Class({
         else {
           this.drink();
         }
-      }
-      else if (animation.key === 'drinking_fail') {
+        break;
+
+        case 'drinking_fail':
         this.tantalus.anims.play('undrinking_fail');
-      }
-      else if (animation.key === 'undrinking_fail') {
+        break;
+
+        case 'undrinking_fail':
         this.tantalus.anims.play('unstoop');
         this.tantalus.x -= 8*1;
         this.tantalus.y += 8*3;
+        break;
+
+        case 'unstoop':
+        this.tantalus.anims.play('tantalus_idle');
+        this.tantalus.x += 8*1;
+        this.tantalus.y -= 8*3;
+        this.delayAction();
+        break;
+
+        case 'eating':
+        this.gameOver("TANTALUS ATE THE APPLE!");
+        break;
+
+        case 'drinking':
+        this.gameOver("TANTALUS DRANK SOME WATER!");
+        break;
+
+        default:
+        console.log(animation.key + " completed. Unhandled.");
       }
     },this);
 
@@ -158,6 +201,22 @@ let Tantalus = new Phaser.Class({
 
   },
 
+  delayAction: function () {
+    setTimeout(() => {
+      if (this.gameIsOver) return;
+
+      if (Math.random() < 0.5 && this.waterUp) {
+        this.stoop();
+      }
+      else if (this.branchDown){
+        this.reach();
+      }
+      else {
+        this.delayAction();
+      }
+    },this.ACTION_MIN_DELAY + Math.random() * this.ACTION_DELAY_RANGE);
+  },
+
   update: function (time,delta) {
 
     if (this.gameIsOver) return;
@@ -181,11 +240,13 @@ let Tantalus = new Phaser.Class({
     this.tantalus.anims.play('eating');
     this.branch.anims.play('no_apple');
     this.eating = true;
+    this.gameIsOver = true;
   },
 
   drink: function  () {
     this.tantalus.anims.play('drinking');
     this.drinking = true;
+    this.gameIsOver = true;
   },
 
   handleInput: function () {
@@ -220,14 +281,14 @@ let Tantalus = new Phaser.Class({
 
   },
 
-  gameOver: function () {
+  gameOver: function (text) {
     this.gameIsOver = true;
 
     let screenRect = new Phaser.Geom.Rectangle(0,0, this.game.canvas.width, this.game.canvas.height);
     let gameOverBackground = this.add.graphics({ fillStyle: { color: '#000' } });
     gameOverBackground.fillRectShape(screenRect);
     let gameOverStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#dda', wordWrap: true, align: 'center' };
-    let gameOverString = "YOU LOSE!\n\nTANTALUS XXXXX!";
+    let gameOverString = "YOU LOSE!\n\n" + text;
     let gameOverText = this.add.text(this.game.canvas.width/2,this.game.canvas.height/2,gameOverString,gameOverStyle);
     gameOverText.setOrigin(0.5);
 
