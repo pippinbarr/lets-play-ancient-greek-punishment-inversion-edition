@@ -55,10 +55,11 @@
 ## Tantalus
 
 - ~~Assemble assets into atlas (including separating tree, water, Tantalus)~~
+- ~~Create basic scene with assets~~
+- ~~Add ability of Tantalus to eat and drink~~
+- ~~Add ability to move tree or water away with key hold~~
 
-- Create basic scene with assets
-- Add ability of Tantalus to eat and drink
-- Add ability to move tree or water away with key hold
+- Automate Tantalus to reach and stoop randomly
 - Sound
 
 ## Prometheus
