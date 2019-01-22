@@ -15,8 +15,9 @@ let Prometheus = new Phaser.Class({
 
     // Eagle
 
-    this.eagle = this.add.sprite(200,50,'atlas','prometheus/eagle/eagle_1.png');
+    this.eagle = this.physics.add.sprite(200,50,'atlas','prometheus/eagle/eagle_1.png');
     this.eagle.setScale(4,4);
+    this.eagle.setCollideWorldBounds(true);
 
     this.createAnimation('eagle_flying','prometheus/eagle/eagle',1,3,5,-1);
 
@@ -64,31 +65,19 @@ let Prometheus = new Phaser.Class({
     // Check cursor input and move eagle appropriately
     if (this.cursors.left.isDown) {
       this.eagle.x -= this.EAGLE_FLY_SPEED;
-      this.eagle.setScale(-4,4);
+      // this.eagle.setScale(-4,4);
+      this.eagle.flipX = true;
     }
     else if (this.cursors.right.isDown) {
       this.eagle.x += this.EAGLE_FLY_SPEED;
-      this.eagle.setScale(4,4);
+      // this.eagle.setScale(4,4);
+      this.eagle.flipX = false;
     }
     if (this.cursors.up.isDown) {
       this.eagle.y -= this.EAGLE_FLY_SPEED;
     }
     else if (this.cursors.down.isDown) {
       this.eagle.y += this.EAGLE_FLY_SPEED;
-    }
-
-    // Constrain eagle to screen bounds
-    if (this.eagle.x - this.eagle.width*2 < 0) {
-      this.eagle.x = this.eagle.width*2;
-    }
-    else if (this.eagle.x + this.eagle.width*2 > this.game.canvas.width) {
-      this.eagle.x = this.game.canvas.width - this.eagle.width*2;
-    }
-    if (this.eagle.y - this.eagle.height*2 < 0) {
-      this.eagle.y = this.eagle.height*2;
-    }
-    else if (this.eagle.y + this.eagle.height*2 > this.game.canvas.height) {
-      this.eagle.y = this.game.canvas.height - this.eagle.height*2;
     }
   },
 
