@@ -14,6 +14,7 @@
 - ~~Separate animation elements (ala Limited Edition for efficiency and because I'll have to elsewhere)~~
 - ~~Remove instructions once they've followed them and had an effect~~
 
+- Change input to repeatedly tapping left (or space?) to force boulder back down. Left is funnier?
 - Sound
 - Feel
 
@@ -82,8 +83,13 @@
 - ~~__THINK THIS IS FIXED BY MAINTAINING THE INSTRUCTION IF YOU LAND ANYWHERE OTHER THAN THE RIGHT SPOT?__ The question of whether it is clear which position is suitable for liver pecking? Add a literal arrow pointing to the spot?~~
 - ~~__COMPROMISED BY HAVING GRAY ROCK AND PROMETHEUS BUT BLACK EAGLE WHICH IS BEHIND THE ROCK SO IF PERCHED DURING NIGHT YOU JUST SEE THE EYE__ Consider adding the grey versions to full night~~
 
+- Change peck input to spacebar?
 - Sound
 - Feel
+
+## Two-player
+
+- Implement it please.
 
 ## Bugs
 

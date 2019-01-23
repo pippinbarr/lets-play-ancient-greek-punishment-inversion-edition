@@ -205,3 +205,23 @@ So a semi compromise would be: hotspots on the rock and Prometheus. If you enter
 Okay, so hardcoding landing positions, constraining in the other ways. May need some other contextual instructions if people get cute (e.g. what to do if they land on Prometheus' face? Just nothing and they keep flying until they land on his damn leg area and can peck? Fair. Fair. Or they can peck from there, but it doesn't hit his liver? Gross and weird. But semi funny. Can cross that bridge when I come to it.)
 
 Okay this will do.
+
+---
+
+# On having finished Prometheus, tweaked Zeno and Danaids, thoughts on Tantalus + input + 2P (Wednesday, 23 January 2019, 17:09PM)
+
+__Prometheus__
+
+Finished off Prometheus today and I think it essentially works pretty well. Discovered the joy of Tweens to automate things with the eagle like hovering and flying on and off screen without player control, pretty seamless actually, the wonder of oncomplete event handlers and so on. Happy with it. The Prometheus thing solves the "no victory" situation by just having an end of day. If you don't peck out the liver before that you lose, tough luck. If you do, it triggers end of day early so you don't wait around. Also did add all the other perches and they work fine. Feels pretty good.
+
+__Zeno__
+
+Went back to Zeno just to add the ability for the flag to move all the way left as well, so you can leave Zeno in the dust but then kind of come back for him if you want to. Adds to the sense of the space being real and means the player has total agency over where the flag goes rather than arbitrary screen-based constraints. Works well.
+
+__Danaids__
+
+My student Charly pointed out in class when I demoed the game that if you allow the player to just leave the holes open (which I did), they could leave them open and walk away without having to play the game anymore. The Danaid would be perpetually thwarted/punished without any effort/investment from you. As such I've changed it so the holes only stay open long enough to empty the tub, or just open and then close if there's no water in it. Changes the dynamic so you have to explicitly empty the bath if you want to keep punishing them, and restores the equivalence between tormentor and tormented.
+
+__And now?__
+
+There's a couple of extra things to do on Tantalus to handle edge cases, and there's a need for sound in all levels, but beyond that the game is close to done, miracle of miracle. I haven't given a lot of thought to implementing two-player as yet, but I don't think it would be hard right? Just a flag and reinstate input controls for the other person. I think it's worth it still. Some concern about the diversity of controls in the game? Arrows, g + h, spacebar. A little messy. Maybe it should always be arrows+space for P1 - tap space to push boulder down. Should work okay actually. Adding to the todos along with 2P.
