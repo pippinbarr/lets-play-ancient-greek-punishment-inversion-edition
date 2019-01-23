@@ -276,6 +276,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">images/prometheus/dark_rock.png</key>
+            <key type="filename">images/prometheus/night.png</key>
+            <key type="filename">images/prometheus/rock/rock_1.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>50,25,100,50</rect>
+                <key>scale9Paddings</key>
+                <rect>50,25,100,50</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">images/prometheus/eagle/eagle_1.png</key>
             <key type="filename">images/prometheus/eagle/eagle_2.png</key>
             <key type="filename">images/prometheus/eagle/eagle_3.png</key>
@@ -319,19 +334,6 @@
                 <rect>5,3,11,5</rect>
                 <key>scale9Paddings</key>
                 <rect>5,3,11,5</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">images/prometheus/rock/rock_1.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>50,25,100,50</rect>
-                <key>scale9Paddings</key>
-                <rect>50,25,100,50</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

@@ -13,6 +13,24 @@ let Prometheus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Prometheus
+
+    this.prometheus = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2 + 4*10,'atlas','prometheus/prometheus/prometheus_1.png').setScale(4);
+
+    this.createAnimation('prometheus_struggle','prometheus/prometheus/prometheus',2,3,5,0);
+
+    // this.prometheus.anims.play('prometheus_struggle');
+
+    // Rock
+
+    this.rock = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2,'atlas','prometheus/rock/rock_1.png').setScale(4);
+
+    // Nighttime scene
+
+    this.night = this.add.sprite(400,200,'atlas','prometheus/night.png').setScale(4);
+    this.night.alpha = 0;
+
+
     // Eagle
 
     this.eagle = this.physics.add.sprite(-20,-20,'atlas','prometheus/eagle/eagle_1.png').setScale(4);
@@ -26,17 +44,10 @@ let Prometheus = new Phaser.Class({
 
     this.eagle.anims.play('eagle_flying');
 
-    // Prometheus
+    // DARKENED ROCK FOR NIGHTTIME
 
-    this.prometheus = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2 + 4*10,'atlas','prometheus/prometheus/prometheus_1.png').setScale(4);
-
-    this.createAnimation('prometheus_struggle','prometheus/prometheus/prometheus',2,3,5,0);
-
-    this.prometheus.anims.play('prometheus_struggle');
-
-    // Rock
-
-    this.rock = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2,'atlas','prometheus/rock/rock_1.png').setScale(4);
+    this.darkRock = this.add.sprite(400,200,'atlas','prometheus/dark_rock.png').setScale(4);
+    this.darkRock.alpha = 0;
 
     // Hotspots
 
@@ -54,14 +65,16 @@ let Prometheus = new Phaser.Class({
     // Instructions
 
     let flyInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
-    let flyInstructionString = "YOU ARE THE EAGLE\nUSE ARROW KEYS\nTO FLY AND\nLAND ON PROMETHEUS";
-    this.flyInstructionsText = this.add.text(this.game.canvas.width/4,150,flyInstructionString,flyInstructionStyle);
+    let flyInstructionString = "YOU ARE THE EAGLE\nUSE ARROW KEYS\nTO FLY AND LAND\nON PROMETHEUS'S BODY";
+    this.flyInstructionsText = this.add.text(this.game.canvas.width/2,100,flyInstructionString,flyInstructionStyle);
     this.flyInstructionsText.setOrigin(0.5);
 
     let peckInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
     let peckInstructionString = "TAP DOWN TO\nPECK OUT\nPROMETHEUS'S\nLIVER";
-    this.peckInstructionsText = this.add.text(660,330,peckInstructionString,peckInstructionStyle);
+    this.peckInstructionsText = this.add.text(400,100,peckInstructionString,peckInstructionStyle);
     this.peckInstructionsText.setOrigin(0.5);
+    this.peckInstructionsText.visible = false;
+
 
     // Stats
 
@@ -86,8 +99,8 @@ let Prometheus = new Phaser.Class({
     this.blackness.alpha = 0;
 
     this.elapsed = 0;
-    this.alphaChange = 0;
     this.DAY_LENGTH = 20000;
+    this.endOfDayTween = null;
 
     // Tween in the eagle
     this.arrive();
@@ -96,35 +109,82 @@ let Prometheus = new Phaser.Class({
   update: function (time,delta) {
     if (this.gameIsOver) return;
 
-    this.elapsed += delta;
-    if (this.elapsed >= this.DAY_LENGTH) {
-      this.alphaChange = 0.1;
-    }
-
-    this.blackness.alpha += this.alphaChange;
-
-    if (this.blackness.alpha >= 1) {
-      if (this.liver > 0) {
-        this.gameIsOver = true;
-        this.gameOver("PROMETHEUS MADE IT TO THE NIGHT\nWITH SOME LIVER INTACT!");
-      }
-      else {
-        // Start the next day
-        this.days++;
-        this.liver = 100;
-        this.blackness.alpha = 0;
-        this.alphaChange = 0;
-        this.elapsed = 0;
-        this.eagle.x = -20;
-        this.eagle.y = -20;
-        this.liverText.text = `LIVER: ${this.liver}%`;
-        this.dayText.text = `DAYS: ${this.days}`;
-        this.arrive();
+    if (this.inputEnabled) {
+      this.elapsed += delta;
+      if (this.elapsed >= this.DAY_LENGTH && this.endOfDayTween === null) {
+        console.log("endOfDay() triggered by elapsed time.");
+        this.endOfDay();
       }
     }
 
     this.handleInput();
     this.updatePrometheus();
+  },
+
+  endOfDay: function () {
+    if (this.endOfDayTween !== null) {
+      return;
+    }
+
+    this.endOfDayTween = this.tweens.add({
+      targets: [this.night, this.darkRock],
+      alpha: 1,
+      duration: 2000,
+      delay: 1000,
+      repeat: 0,
+      onComplete: () => {
+        console.log("endOfDay tween complete");
+        this.endOfDayTween = null;
+        this.inputEnabled = false;
+        setTimeout(() => {
+          if (this.liver > 0) {
+            this.gameIsOver = true;
+            this.gameOver("PROMETHEUS MADE IT TO THE NIGHT\nWITH SOME LIVER INTACT!");
+          }
+          else {
+            this.reset();
+          }
+        },2000);
+      },
+    });
+  },
+
+  reset: function () {
+    // Start the next day
+    this.endOfDayTween = null;
+    this.days++;
+    this.elapsed = 0;
+    this.liver = 100;
+    this.depart();
+  },
+
+  depart: function () {
+    this.eagle.setCollideWorldBounds(false);
+    this.eagle.anims.play('eagle_flying');
+    this.eagle.flipX = false;
+    this.tweens.add({
+      targets: this.eagle,
+      x: this.game.canvas.width + 20,
+      y: -20,
+      duration: Phaser.Math.Distance.Between(this.eagle.x,this.eagle.y,this.game.canvas.width + 20,20)/50 * 1000,
+      repeat: 0,
+      onComplete: () => {
+        this.eagle.x = -20;
+        this.eagle.y = -20;
+        this.currentPerch = null;
+        this.liverText.text = `LIVER: ${this.liver}%`;
+        this.dayText.text = `DAYS: ${this.days}`;
+        this.tweens.add({
+          targets: [this.night, this.darkRock],
+          alpha: 0,
+          duration: 2000,
+          repeat: 0,
+          onComplete: () => {
+            this.arrive();
+          },
+        });
+      }
+    });
   },
 
   handleInput: function () {
@@ -136,21 +196,7 @@ let Prometheus = new Phaser.Class({
         this.hover();
       }
       else if (Phaser.Input.Keyboard.JustDown(this.cursors.down) && this.currentPerch.peck && this.canPeck) {
-        this.eagle.anims.play("eagle_peck");
-
-        this.liver -= 10;
-        if (this.liver < 0) this.liver = 0;
-
-        if (this.liver === 0) {
-          // Short-circuit the day if this was the last peck
-          this.elapsed = this.DAY_LENGTH - 1000;
-        }
-
-        this.liverText.text = `LIVER: ${this.liver}%`;
-        this.canPeck = false;
-        setTimeout(() => {
-          if (this.liver > 0) this.canPeck = true;
-        },750);
+        this.peck();
       }
       return;
     }
@@ -158,12 +204,10 @@ let Prometheus = new Phaser.Class({
     // Check cursor input and move eagle appropriately
     if (this.cursors.left.isDown) {
       this.eagle.setVelocityX(-this.EAGLE_FLY_SPEED);
-      // this.eagle.setScale(-4,4);
       this.eagle.flipX = true;
     }
     else if (this.cursors.right.isDown) {
       this.eagle.setVelocityX(this.EAGLE_FLY_SPEED);
-      // this.eagle.setScale(4,4);
       this.eagle.flipX = false;
     }
     else {
@@ -182,7 +226,7 @@ let Prometheus = new Phaser.Class({
   },
 
   updatePrometheus: function () {
-    if (this.currentPerch && this.currentPerch.peck && Math.random() < 0.01 &&  this.liver > 0) {
+    if (this.inputEnabled && this.currentPerch != null && this.currentPerch.peck && Math.random() < 0.01 && this.liver > 0) {
       this.prometheus.anims.play('prometheus_struggle');
       this.hover();
     }
@@ -207,6 +251,7 @@ let Prometheus = new Phaser.Class({
   },
 
   arrive: function () {
+    this.elapsed = 0;
     this.canPeck = true;
     this.currentPerch = null;
     this.eagle.anims.play('eagle_flying');
@@ -220,10 +265,36 @@ let Prometheus = new Phaser.Class({
       duration: 1500,
       repeat: 0,
       onComplete: () => {
+        this.elapsed = 0;
         this.inputEnabled = true;
         this.eagle.setCollideWorldBounds(true);
       },
     });
+  },
+
+  peck: function () {
+    if (this.peckInstructionsText.visible) {
+      setTimeout(() => {
+        this.peckInstructionsText.visible = false;
+      },500);
+    }
+
+    this.eagle.anims.play("eagle_peck");
+
+    this.liver -= 10;
+    if (this.liver < 0) this.liver = 0;
+
+    if (this.liver === 0) {
+      // Short-circuit the day if this was the last peck
+      this.inputEnabled = false;
+      this.endOfDay();
+    }
+
+    this.liverText.text = `LIVER: ${this.liver}%`;
+    this.canPeck = false;
+    setTimeout(() => {
+      if (this.liver > 0) this.canPeck = true;
+    },750);
   },
 
   gameOver: function () {
@@ -298,6 +369,13 @@ let Prometheus = new Phaser.Class({
   },
 
   perch: function (eagle, perch) {
+    if (this.flyInstructionsText.visible && perch.peck) {
+      this.flyInstructionsText.visible = false;
+      setTimeout(() => {
+        this.peckInstructionsText.visible = true;
+      },500);
+    }
+
     this.eagle.x = perch.data.x;
     this.eagle.y = perch.data.y;
     this.eagle.flipX = perch.data.flipX;
@@ -306,12 +384,12 @@ let Prometheus = new Phaser.Class({
     this.eagle.anims.play('eagle_perched');
     this.currentPerch = perch;
 
-    this.cursors.down.reset();
+    // this.cursors.down.reset();
 
-    this.canPeck = false;
+    this.inputEnabled = false;
     setTimeout(() => {
-      this.canPeck = true;
-    },100);
+      this.inputEnabled = true;
+    },500);
 
     this.eagle.body.checkCollision.none = true;
   },

@@ -74,11 +74,13 @@
 - ~~__WENT FOR NO EXIT ON ANY SIDE TO CREATE SENSE OF CONFINEMENT__ Constrain flying based on wrap and no-exit for sides and top respectively~~
 - ~~Create hotspots for snap-to-landing~~
 - ~~Enable pecking~~
+- ~~Put in liver stat and make pecking affect it~~
+- ~~__NOT NEEDED I THINK? YOU'D TRY IT EVENTUALLY__ Add instruction for takeoff? Or not really needed?~~
+- ~~Enable auto-struggle~~
+- ~~Improve day/night cycle (fade in from night especially)~~
+- ~~__THINK THIS IS FIXED BY MAINTAINING THE INSTRUCTION IF YOU LAND ANYWHERE OTHER THAN THE RIGHT SPOT?__ The question of whether it is clear which position is suitable for liver pecking? Add a literal arrow pointing to the spot?~~
+- ~~__COMPROMISED BY HAVING GRAY ROCK AND PROMETHEUS BUT BLACK EAGLE WHICH IS BEHIND THE ROCK SO IF PERCHED DURING NIGHT YOU JUST SEE THE EYE__ Consider adding the grey versions to full night~~
 
-- Put in liver stat and make pecking affect it
-- Add instruction for takeoff? Or not really needed?
-- The question of whether it is clear which position is suitable for liver pecking?
-- Enable auto-struggle
 - Sound
 
 ## Bugs
