@@ -68,12 +68,16 @@
 
 - ~~Work out how the flying part is going to work because it ain't clear yet?~~
 
-- Assemble assets into atlas
-- Create basic scene with assets
-- Enable free-form flying around
-- Constrain flying based on wrap and no-exit for sides and top respectively
-- Create hotspots for snap-to-landing
-- Enable pecking
+- ~~Assemble assets into atlas~~
+- ~~Create basic scene with assets~~
+- ~~Enable free-form flying around~~
+- ~~__WENT FOR NO EXIT ON ANY SIDE TO CREATE SENSE OF CONFINEMENT__ Constrain flying based on wrap and no-exit for sides and top respectively~~
+- ~~Create hotspots for snap-to-landing~~
+- ~~Enable pecking~~
+
+- Put in liver stat and make pecking affect it
+- Add instruction for takeoff? Or not really needed?
+- The question of whether it is clear which position is suitable for liver pecking?
 - Enable auto-struggle
 - Sound
 

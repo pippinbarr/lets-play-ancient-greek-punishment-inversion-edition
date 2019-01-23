@@ -39,6 +39,7 @@ let Prometheus = new Phaser.Class({
     // Hotspots
 
     this.perches = this.createPerches();
+    this.currentPerch = null;
 
     this.physics.add.overlap(this.eagle,this.perches, this.perch, null, this);
 
@@ -70,15 +71,15 @@ let Prometheus = new Phaser.Class({
 
   handleInput: function () {
 
-    if (this.perched) {
+    if (this.currentPerch !== null) {
       if (this.cursors.up.isDown) {
         this.eagle.y -= 4*8;
         this.eagle.anims.play('eagle_flying');
         this.eagle.body.checkCollision.none = false;
         this.eagle.setVelocityY(-this.EAGLE_FLY_SPEED);
-        this.perched = false;
+        this.currentPerch = null;
       }
-      else if (Phaser.Input.Keyboard.JustDown(this.cursors.down)) {
+      else if (Phaser.Input.Keyboard.JustDown(this.cursors.down) && this.currentPerch.peck) {
         this.eagle.anims.play("eagle_peck");
       }
       return;
@@ -146,24 +147,50 @@ let Prometheus = new Phaser.Class({
   createPerches: function () {
     let perches = this.physics.add.staticGroup();
 
-    let p = perches.create(4*99,4*61,'atlas','prometheus/perch.png').setScale(4);
-    p.peck = true;
-    p.data = { x: 4*98, y: 4*56, flipX: false };
-    p.alpha = 0.5;
+    // Liver
+    this.createPerch(perches,4*99,4*61,4*98,4*56,true,false);
+    // Head
+    this.createPerch(perches,4*108,4*61,4*108,4*54,false,true);
+    // Feet
+    this.createPerch(perches,4*92,4*64,4*92,4*58,false,false);
+    // West 1
+    this.createPerch(perches,4*86,4*72,4*85,4*68,false,true);
+    // West 2
+    this.createPerch(perches,4*76,4*80,4*76,4*76,false,true);
+    // West 3
+    this.createPerch(perches,4*66,4*88,4*68,4*88,false,true);
+    // West 4
+    this.createPerch(perches,4*64,4*98,4*64,4*94,false,true);
+    // East 1
+    this.createPerch(perches,4*116,4*64,4*116,4*62,false,false);
+    // East 2
+    this.createPerch(perches,4*124,4*74,4*124,4*72,false,false);
+    // East 3
+    this.createPerch(perches,4*134,4*84,4*133,4*82,false,false);
+    // East 3
+    this.createPerch(perches,4*142,4*90,4*141,4*87,false,false);
+    // East 4
+    this.createPerch(perches,4*150,4*95,4*152,4*94,false,false);
 
     return perches;
   },
 
-  perch: function (eagle, perch) {
-    console.log("The eagle has landed...");
+  createPerch: function (perches,x,y,perchX,perchY,peck,flipX) {
+    let p = perches.create(x,y,'atlas','prometheus/perch.png').setScale(4);
+    p.peck = peck;
+    p.data = { x: perchX, y: perchY, flipX: flipX };
+    p.alpha = 0.5;
+    p.visible = false;
+  },
 
+  perch: function (eagle, perch) {
     this.eagle.x = perch.data.x;
     this.eagle.y = perch.data.y;
     this.eagle.flipX = perch.data.flipX;
     this.eagle.setVelocityX(0);
     this.eagle.setVelocityY(0);
     this.eagle.anims.play('eagle_perched');
-    this.perched = true;
+    this.currentPerch = perch;
     this.cursors.down.reset();
 
     this.eagle.body.checkCollision.none = true;
