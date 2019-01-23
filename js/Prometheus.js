@@ -5,7 +5,7 @@ let Prometheus = new Phaser.Class({
   initialize: function Prometheus () {
     Phaser.Scene.call(this, { key: 'prometheus' });
 
-    this.EAGLE_FLY_SPEED = 5;
+    this.EAGLE_FLY_SPEED = 70;
   },
 
   create: function () {
@@ -15,18 +15,18 @@ let Prometheus = new Phaser.Class({
 
     // Eagle
 
-    this.eagle = this.physics.add.sprite(200,50,'atlas','prometheus/eagle/eagle_1.png');
-    this.eagle.setScale(4,4);
+    this.eagle = this.physics.add.sprite(300,200,'atlas','prometheus/eagle/eagle_1.png').setScale(4);
     this.eagle.setCollideWorldBounds(true);
 
-    this.createAnimation('eagle_flying','prometheus/eagle/eagle',1,3,5,-1);
+    this.createAnimation('eagle_flying','prometheus/eagle/eagle',1,4,5,-1);
+    this.createAnimation('eagle_perched','prometheus/eagle/eagle',5,5,5,-1);
+    this.createAnimation('eagle_peck','prometheus/eagle/eagle',6,5,5,0);
 
     this.eagle.anims.play('eagle_flying');
 
     // Prometheus
 
-    this.prometheus = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2 + 4*10,'atlas','prometheus/prometheus/prometheus_1.png')
-    this.prometheus.setScale(4,4);
+    this.prometheus = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2 + 4*10,'atlas','prometheus/prometheus/prometheus_1.png').setScale(4);
 
     this.createAnimation('prometheus_struggle','prometheus/prometheus/prometheus',1,3,5,0);
 
@@ -34,13 +34,20 @@ let Prometheus = new Phaser.Class({
 
     // Rock
 
-    this.rock = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2,'atlas','prometheus/rock/rock_1.png');
-    this.rock.setScale(4,4);
+    this.rock = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2,'atlas','prometheus/rock/rock_1.png').setScale(4);
 
-    // Add input tracking
+    // Hotspots
+
+    this.perches = this.createPerches();
+
+    this.physics.add.overlap(this.eagle,this.perches, this.perch, null, this);
+
+    // Input
+
     this.cursors = this.input.keyboard.createCursorKeys();
 
-    // Add instructions
+    // Instructions
+
     let flyInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
     let flyInstructionString = "YOU ARE THE EAGLE\nUSE ARROW KEYS\nTO FLY AND\nLAND ON PROMETHEUS";
     this.flyInstructionsText = this.add.text(this.game.canvas.width/4,150,flyInstructionString,flyInstructionStyle);
@@ -62,22 +69,44 @@ let Prometheus = new Phaser.Class({
   },
 
   handleInput: function () {
+
+    if (this.perched) {
+      if (this.cursors.up.isDown) {
+        this.eagle.y -= 4*8;
+        this.eagle.anims.play('eagle_flying');
+        this.eagle.body.checkCollision.none = false;
+        this.eagle.setVelocityY(-this.EAGLE_FLY_SPEED);
+        this.perched = false;
+      }
+      else if (Phaser.Input.Keyboard.JustDown(this.cursors.down)) {
+        this.eagle.anims.play("eagle_peck");
+      }
+      return;
+    }
+
     // Check cursor input and move eagle appropriately
     if (this.cursors.left.isDown) {
-      this.eagle.x -= this.EAGLE_FLY_SPEED;
+      this.eagle.setVelocityX(-this.EAGLE_FLY_SPEED);
       // this.eagle.setScale(-4,4);
       this.eagle.flipX = true;
     }
     else if (this.cursors.right.isDown) {
-      this.eagle.x += this.EAGLE_FLY_SPEED;
+      this.eagle.setVelocityX(this.EAGLE_FLY_SPEED);
       // this.eagle.setScale(4,4);
       this.eagle.flipX = false;
     }
+    else {
+      this.eagle.setVelocityX(0);
+    }
+
     if (this.cursors.up.isDown) {
-      this.eagle.y -= this.EAGLE_FLY_SPEED;
+      this.eagle.setVelocityY(-this.EAGLE_FLY_SPEED);
     }
     else if (this.cursors.down.isDown) {
-      this.eagle.y += this.EAGLE_FLY_SPEED;
+      this.eagle.setVelocityY(this.EAGLE_FLY_SPEED);
+    }
+    else {
+      this.eagle.setVelocityY(0);
     }
   },
 
@@ -112,6 +141,32 @@ let Prometheus = new Phaser.Class({
       repeat: repeat,
     };
     this.anims.create(config);
+  },
+
+  createPerches: function () {
+    let perches = this.physics.add.staticGroup();
+
+    let p = perches.create(4*99,4*61,'atlas','prometheus/perch.png').setScale(4);
+    p.peck = true;
+    p.data = { x: 4*98, y: 4*56, flipX: false };
+    p.alpha = 0.5;
+
+    return perches;
+  },
+
+  perch: function (eagle, perch) {
+    console.log("The eagle has landed...");
+
+    this.eagle.x = perch.data.x;
+    this.eagle.y = perch.data.y;
+    this.eagle.flipX = perch.data.flipX;
+    this.eagle.setVelocityX(0);
+    this.eagle.setVelocityY(0);
+    this.eagle.anims.play('eagle_perched');
+    this.perched = true;
+    this.cursors.down.reset();
+
+    this.eagle.body.checkCollision.none = true;
   }
 
 });
