@@ -14,6 +14,7 @@ let Zeno = new Phaser.Class({
     this.cameras.main.setBackgroundColor('#dad');
 
     this.MAX_RIGHT = this.game.canvas.width - 4*20;
+    this.MAX_LEFT = 0 + 4*20;
 
     this.gameIsOver = false;
 
@@ -69,6 +70,8 @@ let Zeno = new Phaser.Class({
       console.log("YOU LOSE");
       this.gameIsOver = true;
       this.zeno.play('victory');
+      this.inputEnabled = false;
+      
       setTimeout(() => {
         this.gameOver();
       },1250);
@@ -76,8 +79,20 @@ let Zeno = new Phaser.Class({
   },
 
   handleInput: function () {
+    if (!this.inputEnabled) return;
+
     if (this.cursors.left.isDown) {
-      this.flag.x -= this.FLAG_SPEED;
+      if (this.flag.x === this.MAX_LEFT) {
+        this.zeno.x += this.FLAG_SPEED;
+        this.dot1.x += this.FLAG_SPEED;
+        this.dot2.x += this.FLAG_SPEED;
+      }
+      else {
+        this.flag.x -= this.FLAG_SPEED;
+        if (this.flag.x < this.MAX_LEFT) {
+          this.flag.x = this.MAX_LEFT;
+        }
+      }
     }
     else if (this.cursors.right.isDown) {
       if (this.flag.x === this.MAX_RIGHT) {
@@ -98,6 +113,14 @@ let Zeno = new Phaser.Class({
     }
     if (this.dot2.x < -this.game.canvas.width) {
       this.dot2.x += this.game.canvas.width;
+    }
+
+    if (this.dot1.x > this.game.canvas.width/2) {
+      console.log("Dot 1 off")
+      this.dot1.x -= this.game.canvas.width;
+    }
+    if (this.dot2.x > this.game.canvas.width) {
+      this.dot2.x -= this.game.canvas.width;
     }
   },
 
