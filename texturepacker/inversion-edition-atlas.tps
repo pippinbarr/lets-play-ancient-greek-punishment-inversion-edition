@@ -182,6 +182,7 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">images/danaids/bath/bath_1.png</key>
+            <key type="filename">images/danaids/bath/bath_10.png</key>
             <key type="filename">images/danaids/bath/bath_2.png</key>
             <key type="filename">images/danaids/bath/bath_3.png</key>
             <key type="filename">images/danaids/bath/bath_4.png</key>

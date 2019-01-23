@@ -34,6 +34,7 @@ let Danaids = new Phaser.Class({
     // Add Danaid
     this.danaid = this.add.sprite(4*40, this.game.canvas.height/2 + 4*16, 'atlas', 'danaids/danaid/danaid_1.png');
     this.danaid.setScale(4,4);
+    this.danaid.flipX = true;
     this.danaid.vx = 0;
 
     this.createAnimation('idle','danaids/danaid/danaid',4,4,10,-1);
@@ -62,7 +63,7 @@ let Danaids = new Phaser.Class({
         }
         else {
           this.danaid.anims.play('running');
-          this.danaid.setScale(-4,4);
+          this.danaid.flipX = true;
           this.danaid.vx = -1;
         }
       }
@@ -78,12 +79,12 @@ let Danaids = new Phaser.Class({
       }
       else if (animation.key === 'pick_up_bucket') {
         this.danaid.anims.play('running');
-        this.danaid.setScale(-4,4);
+        this.danaid.flipX = true;
         this.danaid.vx = -1;
       }
       else if (animation.key === 'lower_bucket') {
         this.danaid.anims.play('running');
-        this.danaid.setScale(4,4);
+        this.danaid.flipX = false;
         this.tap.play('tap_restarting');
         this.danaid.vx = 1;
       }
@@ -97,26 +98,28 @@ let Danaids = new Phaser.Class({
       }
     },this);
 
-    this.danaid.vx = 1;
+    this.danaid.vx = -1;
+    this.danaid.flipX = true;
     this.danaid.anims.play('running');
 
     // Add bath
     this.bath = this.add.sprite(this.game.canvas.width - 4*20, this.game.canvas.height/2 + 4*19, 'atlas', 'danaids/bath/bath_9.png');
     this.bath.setScale(4,4);
 
-    this.createAnimation('bath_closed','danaids/bath/bath',9,9,10,-1);
+    this.createAnimation('bath_closed','danaids/bath/bath',10,10,10,-1);
     this.createAnimation('bath_open','danaids/bath/bath',1,1,10,-1);
-    this.createAnimation('bath_emptying','danaids/bath/bath',2,6,5,0);
-    this.createAnimation('bath_finish_empty','danaids/bath/bath',6,8,5,0);
+    this.createAnimation('bath_emptying','danaids/bath/bath',3,6,5,0);
+    this.createAnimation('bath_finish_empty','danaids/bath/bath',6,9,5,0);
 
     this.bath.on('animationcomplete',function (animation,frame) {
       if (animation.key === 'bath_finish_empty') {
         console.log("Here")
-        this.bath.anims.play('bath_open');
+        setTimeout(() => {
+          this.bath.anims.play('bath_closed');
+          this.holesOpen = false;
+        },500);
       }
     },this);
-
-    this.bath.anims.play('bath_closed');
 
     this.bath.anims.play('bath_closed');
     this.holesOpen = false;
@@ -168,17 +171,21 @@ let Danaids = new Phaser.Class({
   handleInput: function () {
     if (Phaser.Input.Keyboard.JustDown(this.spaceBar)) {
 
-      if (this.emptying) return;
-      if (this.pouring) return;
+      if (this.emptying || this.pouring) return;
 
       if (this.holesOpen) {
-        this.holesOpen = false;
-        this.bath.play('bath_closed');
+        return;
       }
       else {
         this.holesOpen = true;
         if (this.fullPercentage === 0) {
           this.bath.play('bath_open');
+          this.holesOpen = true;
+          setTimeout(() => {
+            if (this.emptying || this.pouring) return;
+            this.bath.play('bath_closed');
+            this.holesOpen = false;
+          },1000);
         }
       }
     }

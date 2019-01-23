@@ -15,7 +15,7 @@
 - ~~Remove instructions once they've followed them and had an effect~~
 
 - Sound
-- Tweak feel
+- Feel
 
 ### Zeno
 
@@ -30,7 +30,7 @@
 - ~~Add ability for flag to move left and scroll Zeno back toward his goal (dots go other way)~~
 
 - Sound
-- Work on feel (quite a lot)
+- Feel
 
 ### Danaids
 
@@ -47,10 +47,10 @@
 - ~~Empty while bathing: empty full 100%, then Danaid gets out and goes back to filling~~
 - ~~Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?~~
 - ~~Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)~~
+- ~~__THANKS CHARLY__ Change controls so that you open holes, it empties (or not) and then they close again (to avoid the situation of just leaving the holes open indefinitely and thus not needing to stay on guard and punish)~~
 
-- Change controls so that you open holes, it empties (or not) and then they close again (to avoid the situation of just leaving the holes open indefinitely and thus not needing to stay on guard and punish)
 - Sound
-- Tweaks
+- Feel
 
 ## Tantalus
 
@@ -63,6 +63,7 @@
 - Handle scenario where he's reaching and you lower the branch (he should grab the apple right?)
 - Handle scenario where he's stooping or unstooping and you raise the water (he should unstoop and drink the water right?) (or should it simply be that if the water goes over his head he just drinks it? How can I tell?)
 - Sound
+- Feel
 
 ## Prometheus
 
@@ -82,6 +83,7 @@
 - ~~__COMPROMISED BY HAVING GRAY ROCK AND PROMETHEUS BUT BLACK EAGLE WHICH IS BEHIND THE ROCK SO IF PERCHED DURING NIGHT YOU JUST SEE THE EYE__ Consider adding the grey versions to full night~~
 
 - Sound
+- Feel
 
 ## Bugs
 
