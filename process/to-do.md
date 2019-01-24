@@ -6,6 +6,7 @@
 - ~~Add basic scene template to project~~
 - ~~Add starting menu text just prove you can~~
 - ~~Add basic menu interaction~~
+- Add a proper preloader with click to continue
 
 ### Sisyphus
 - ~~Finish first version to point where you can use input to reverse the animation down the hill~~
@@ -14,9 +15,8 @@
 - ~~Separate animation elements (ala Limited Edition for efficiency and because I'll have to elsewhere)~~
 - ~~Remove instructions once they've followed them and had an effect~~
 - ~~Change input to repeatedly tapping left (or space?) to force boulder back down. Left is funnier?~~
-
-- Sound
-- Feel
+- ~~Sound~~
+- ~~Final pre-testing checks~~
 
 ### Zeno
 
@@ -29,9 +29,8 @@
 - ~~__ NO__ Contemplate whether a camera that zooms out would be better (but problematic for being non-infinite)~~
 - ~~__THIS WORKS WELL__ Try a version where Zeno can scroll off the left side indefinitely (maybe add one of those little "< ZENO" markers)~~
 - ~~Add ability for flag to move left and scroll Zeno back toward his goal (dots go other way)~~
-
-- Sound
-- Feel
+- ~~Sound~~
+- ~~Final pre-testing checks~~
 
 ### Danaids
 
@@ -49,9 +48,8 @@
 - ~~Empty while climbing in: choose some point of no return for getting in anim and before that reverse? Or just always make them get all the way in then out again?~~
 - ~~Add 'cleaning' frames (or just flash "WASHING""? or just say that when they get in they're instantly clean? Or have a percentage of CLEANLINESS going up)~~
 - ~~__THANKS CHARLY__ Change controls so that you open holes, it empties (or not) and then they close again (to avoid the situation of just leaving the holes open indefinitely and thus not needing to stay on guard and punish)~~
-
-- Sound
-- Feel
+- ~~Sound~~
+- ~~Final pre-testing checks~~
 
 ## Tantalus
 
@@ -62,9 +60,8 @@
 - ~~Automate Tantalus to reach and stoop randomly~~
 - ~~Handle scenario where he's reaching and you lower the branch (he should grab the apple right?)~~
 - ~~__ACTUALLY HANDLED BY HAVING HIM NOT REACH/STOOP UNLESS THE THING IS AVAILABLE__ Handle scenario where he's stooping or unstooping and you raise the water (he should unstoop and drink the water right?) (or should it simply be that if the water goes over his head he just drinks it? How can I tell?)~~
-
-- Sound
-- Feel
+- ~~Sound~~
+- ~~Final pre-testing checks~~
 
 ## Prometheus
 
@@ -83,9 +80,8 @@
 - ~~__THINK THIS IS FIXED BY MAINTAINING THE INSTRUCTION IF YOU LAND ANYWHERE OTHER THAN THE RIGHT SPOT?__ The question of whether it is clear which position is suitable for liver pecking? Add a literal arrow pointing to the spot?~~
 - ~~__COMPROMISED BY HAVING GRAY ROCK AND PROMETHEUS BUT BLACK EAGLE WHICH IS BEHIND THE ROCK SO IF PERCHED DURING NIGHT YOU JUST SEE THE EYE__ Consider adding the grey versions to full night~~
 - ~~Change peck input to spacebar?~~
-
-- Sound
-- Feel
+- ~~Sound~~
+- ~~Final pre-testing checks~~
 
 ## ~~Two-player~~
 

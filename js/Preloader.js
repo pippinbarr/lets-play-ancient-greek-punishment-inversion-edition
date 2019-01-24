@@ -7,6 +7,8 @@ let Preloader = new Phaser.Class({
   },
 
   preload: function () {
+    this.ready = false;
+
     this.load.multiatlas('atlas', 'assets/atlas/atlas.json', 'assets/atlas');
 
     this.load.audio('peck', ['assets/sounds/peck.mp3','assets/sounds/peck.ogg']);
@@ -16,7 +18,13 @@ let Preloader = new Phaser.Class({
   },
 
   create: function () {
-    this.scene.start('menu');
-  }
+    // Absolutely hideous hack to avoid this font-loading problem: display invisible text in preloader for
+    // a tiny amount of time before going to the menu, which seems to fix it.
+    let titleStyle = { fontFamily: 'Commodore', fontSize: '38px', fill: '#000', wordWrap: true, align: 'center' };
+    let title = this.add.text(this.game.canvas.width/2,100,"LET'S PLAY:\nANCIENT GREEK PUNISHMENT:\nINVERSION EDITION",titleStyle);
 
+    setTimeout(() => {
+      this.scene.start('menu');
+    },500);
+  },
 });

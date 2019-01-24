@@ -19,9 +19,13 @@ let Tantalus = new Phaser.Class({
 
     // Sound
     this.waterDownSFX = this.sound.add('swoopdown');
+    this.waterDownSFX.volume = 0.2;
     this.branchUpSFX = this.sound.add('swoopup');
+    this.branchUpSFX.volume = 0.2;
     this.gameOverSFX = this.sound.add('swoopdown');
+    this.gameOverSFX.volume = 0.2;
     this.victorySFX = this.sound.add('victory');
+    this.victorySFX.volume = 0.2;
 
     // Tantalus
 
@@ -272,6 +276,7 @@ let Tantalus = new Phaser.Class({
         this.branchUp = false;
         this.branchLowering = true;
         this.branch.anims.play('branch_lower');
+        this.appleInstructionsText.visible = false;
       }
     }
 
@@ -286,6 +291,7 @@ let Tantalus = new Phaser.Class({
         this.waterDown = false;
         this.waterRaising = true;
         this.water.anims.play('water_raise');
+        this.waterInstructionsText.visible = false;
       }
     }
 

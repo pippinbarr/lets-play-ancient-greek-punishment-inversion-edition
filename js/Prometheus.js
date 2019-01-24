@@ -16,9 +16,13 @@ let Prometheus = new Phaser.Class({
     // Sound
 
     this.peckSFX = this.sound.add('peck');
+    this.peckSFX.volume = 0.2;
     this.liverRegenerationSFX = this.sound.add('swoopup');
+    this.liverRegenerationSFX.volume = 0.2;
     this.gameOverSFX = this.sound.add('swoopdown');
+    this.gameOverSFX.volume = 0.2;
     this.victorySFX = this.sound.add('victory');
+    this.victorySFX.volume = 0.2;
 
     // Prometheus
 
@@ -66,7 +70,6 @@ let Prometheus = new Phaser.Class({
     // Input
 
     this.cursors = this.input.keyboard.createCursorKeys();
-    this.peckKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
     this.inputEnabled = false;
 
@@ -210,7 +213,7 @@ let Prometheus = new Phaser.Class({
       if (this.cursors.up.isDown) {
         this.hover();
       }
-      else if (Phaser.Input.Keyboard.JustDown(this.peckKey) && this.currentPerch.peck && this.canPeck) {
+      else if (Phaser.Input.Keyboard.JustDown(this.cursors.space) && this.currentPerch.peck && this.canPeck) {
         this.peck();
       }
       return;

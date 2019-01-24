@@ -20,7 +20,9 @@ let Zeno = new Phaser.Class({
 
     // Sound
     this.victorySFX = this.sound.add('victory');
+    this.victorySFX.volume = 0.2;
     this.gameOverSFX = this.sound.add('swoopdown');
+    this.gameOverSFX.volume = 0.2;
 
     // Create the sprite that represents the entire minigame, scale up
     this.zeno = this.add.sprite(4*10, this.game.canvas.height/2 + 4*15, 'atlas', 'zeno/zeno/zeno_1.png');
@@ -55,6 +57,8 @@ let Zeno = new Phaser.Class({
 
     // Add input tracking
     this.cursors = this.input.keyboard.createCursorKeys();
+    // Track how many input frames there are (for removing the instructions)
+    this.inputs = 0;
 
     // Add instructions
     let instructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
@@ -73,7 +77,6 @@ let Zeno = new Phaser.Class({
     this.updateZeno();
 
     if (this.flag.x <= this.zeno.x + this.zeno.width/2) {
-      console.log("YOU LOSE");
       this.gameIsOver = true;
       this.zeno.play('victory');
       this.inputEnabled = false;
@@ -89,6 +92,7 @@ let Zeno = new Phaser.Class({
     if (!this.inputEnabled) return;
 
     if (this.cursors.left.isDown) {
+      this.inputs++;
       if (this.flag.x === this.MAX_LEFT) {
         this.zeno.x += this.FLAG_SPEED;
         this.dot1.x += this.FLAG_SPEED;
@@ -102,6 +106,7 @@ let Zeno = new Phaser.Class({
       }
     }
     else if (this.cursors.right.isDown) {
+      this.inputs++;
       if (this.flag.x === this.MAX_RIGHT) {
         this.zeno.x -= this.FLAG_SPEED;
         this.dot1.x -= this.FLAG_SPEED;
@@ -115,7 +120,6 @@ let Zeno = new Phaser.Class({
       }
     }
     if (this.dot1.x < -this.game.canvas.width/2) {
-      console.log("Dot 1 off")
       this.dot1.x += this.game.canvas.width;
     }
     if (this.dot2.x < -this.game.canvas.width) {
@@ -123,11 +127,14 @@ let Zeno = new Phaser.Class({
     }
 
     if (this.dot1.x > this.game.canvas.width/2) {
-      console.log("Dot 1 off")
       this.dot1.x -= this.game.canvas.width;
     }
     if (this.dot2.x > this.game.canvas.width) {
       this.dot2.x -= this.game.canvas.width;
+    }
+
+    if (this.inputs > 120) {
+      this.instructionsText.visible = false;
     }
   },
 

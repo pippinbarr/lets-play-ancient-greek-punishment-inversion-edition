@@ -27,7 +27,9 @@ let Sisyphus = new Phaser.Class({
 
     // Sound
     this.victorySFX = this.sound.add('victory');
+    this.victorySFX.volume = 0.2;
     this.gameOverSFX = this.sound.add('swoopdown');
+    this.gameOverSFX.volume = 0.2;
 
     this.hill = this.add.sprite(this.game.canvas.width/2, this.game.canvas.height/2,'atlas','sisyphus/hill.png');
     this.hill.setScale(4,4);

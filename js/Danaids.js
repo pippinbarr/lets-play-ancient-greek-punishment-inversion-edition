@@ -16,9 +16,13 @@ let Danaids = new Phaser.Class({
 
     // Sound
     this.emptySFX = this.sound.add('swoopdown');
+    this.emptySFX.volume = 0.2;
     this.fillSFX = this.sound.add('swoopup');
+    this.fillSFX.volume = 0.2;
     this.gameOverSFX = this.sound.add('swoopdown');
+    this.gameOverSFX.volume = 0.2;
     this.victorySFX = this.sound.add('victory');
+    this.emptySFX.volume = 0.2;
 
     // Add tap
     this.tap = this.add.sprite(4*5, this.game.canvas.height/2 + 4*16, 'atlas', 'danaids/tap/tap_1.png');
@@ -130,7 +134,7 @@ let Danaids = new Phaser.Class({
     this.bath.anims.play('bath_closed');
     this.holesOpen = false;
     this.emptying = false;
-    this.fullPercentage = 80;
+    this.fullPercentage = 0;
     this.currentPourAmount = 0;
     this.fillTime = 0;
     this.BATH_X = this.bath.x - 4*16;
@@ -267,6 +271,7 @@ let Danaids = new Phaser.Class({
       }
     }
     else if (this.holesOpen && this.fullPercentage > 0) {
+      this.instructionsText.visible = false;
       this.emptying = true;
       this.bath.anims.play('bath_emptying');
       this.emptySFX.play();
