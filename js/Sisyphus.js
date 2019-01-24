@@ -44,13 +44,11 @@ let Sisyphus = new Phaser.Class({
     this.defaultFrameTime = this.sisyphus.anims.currentAnim.msPerFrame;
 
     // Add input tracking
-    this.keyOne = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
-    this.keyTwo = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.H);
-    this.nextKey = this.keyOne;
+    this.pushKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
 
     // Add instructions
     let instructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
-    let instructionString = "YOU ARE THE ROCK\nRAPIDLY PRESS\n'G' AND 'H'\nTO ROLL DOWNHILL";
+    let instructionString = "YOU ARE THE ROCK\nRAPIDLY PRESS\nLEFT ARROW\nTO ROLL DOWNHILL";
     this.instructionsText = this.add.text(this.game.canvas.width/4,100,instructionString,instructionStyle);
     this.instructionsText.setOrigin(0.5);
   },
@@ -107,15 +105,14 @@ let Sisyphus = new Phaser.Class({
   },
 
   handleInput: function () {
-    if (Phaser.Input.Keyboard.JustDown(this.nextKey)) {
+    if (Phaser.Input.Keyboard.JustDown(this.pushKey)) {
       this.timeSinceLastInput = 0;
-      if (this.instructionsText.visible) {
+      if (this.instructionsText.visible && this.sisyphus.anims.currentAnim.key != 'start') {
         this.keyCount++;
         if (this.keyCount >= this.MIN_KEY_COUNT) {
           this.instructionsText.visible = false;
         }
       }
-      this.nextKey = (this.nextKey === this.keyOne) ? this.keyTwo : this.keyOne;
     }
   },
 

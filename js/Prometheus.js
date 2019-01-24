@@ -59,6 +59,7 @@ let Prometheus = new Phaser.Class({
     // Input
 
     this.cursors = this.input.keyboard.createCursorKeys();
+    this.peckKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
     this.inputEnabled = false;
 
@@ -70,7 +71,7 @@ let Prometheus = new Phaser.Class({
     this.flyInstructionsText.setOrigin(0.5);
 
     let peckInstructionStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#000', wordWrap: true, align: 'center' };
-    let peckInstructionString = "TAP DOWN TO\nPECK OUT\nPROMETHEUS'S\nLIVER";
+    let peckInstructionString = "USE SPACEBAR TO\nPECK OUT\nPROMETHEUS'S\nLIVER";
     this.peckInstructionsText = this.add.text(400,100,peckInstructionString,peckInstructionStyle);
     this.peckInstructionsText.setOrigin(0.5);
     this.peckInstructionsText.visible = false;
@@ -195,7 +196,7 @@ let Prometheus = new Phaser.Class({
       if (this.cursors.up.isDown) {
         this.hover();
       }
-      else if (Phaser.Input.Keyboard.JustDown(this.cursors.down) && this.currentPerch.peck && this.canPeck) {
+      else if (Phaser.Input.Keyboard.JustDown(this.peckKey) && this.currentPerch.peck && this.canPeck) {
         this.peck();
       }
       return;
@@ -386,10 +387,10 @@ let Prometheus = new Phaser.Class({
 
     // this.cursors.down.reset();
 
-    this.inputEnabled = false;
-    setTimeout(() => {
-      this.inputEnabled = true;
-    },500);
+    // this.inputEnabled = false;
+    // setTimeout(() => {
+    //   this.inputEnabled = true;
+    // },500);
 
     this.eagle.body.checkCollision.none = true;
   },
