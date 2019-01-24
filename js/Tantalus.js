@@ -135,7 +135,7 @@ let Tantalus = new Phaser.Class({
       else if (animation.key === 'branch_lower') {
         this.branchDown = true;
         this.branchLowering = false;
-        if (this.tantalus.anims.currentAnim.key === 'eating_fail_loop') {
+        if (this.tantalus.anims.currentAnim.key === 'eating_fail') {
           this.eat();
         }
       }
@@ -182,20 +182,20 @@ let Tantalus = new Phaser.Class({
 
     // Input
 
-    this.branchKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.G);
-    this.waterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.H);
+    this.branchKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+    this.waterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
 
     // Instructions
 
     // - Branch
     let appleInstructionStyle = { fontFamily: 'Commodore', fontSize: '20px', fill: '#000', wordWrap: true, align: 'center' };
-    let appleInstructionString = "YOU ARE THE APPLE\nHOLD G TO\nLIFT YOUR BRANCH";
+    let appleInstructionString = "YOU ARE THE APPLE\nHOLD UP ARROW TO\nLIFT YOUR BRANCH";
     this.appleInstructionsText = this.add.text(3*this.game.canvas.width/4,100,appleInstructionString,appleInstructionStyle);
     this.appleInstructionsText.setOrigin(0.5);
 
     // - Water
     let waterInstructionStyle = { fontFamily: 'Commodore', fontSize: '20px', fill: '#fff', wordWrap: true, align: 'center' };
-    let waterInstructionString = "YOU ARE THE WATER\nHOLD H TO\nLOWER YOUR LEVEL";
+    let waterInstructionString = "YOU ARE THE WATER\nHOLD DOWN ARROW TO\nLOWER YOUR LEVEL";
     this.waterInstructionsText = this.add.text(400,360,waterInstructionString,waterInstructionStyle);
     this.waterInstructionsText.setOrigin(0.5);
 

@@ -60,9 +60,9 @@
 - ~~Add ability of Tantalus to eat and drink~~
 - ~~Add ability to move tree or water away with key hold~~
 - ~~Automate Tantalus to reach and stoop randomly~~
+- ~~Handle scenario where he's reaching and you lower the branch (he should grab the apple right?)~~
+- ~~__ACTUALLY HANDLED BY HAVING HIM NOT REACH/STOOP UNLESS THE THING IS AVAILABLE__ Handle scenario where he's stooping or unstooping and you raise the water (he should unstoop and drink the water right?) (or should it simply be that if the water goes over his head he just drinks it? How can I tell?)~~
 
-- Handle scenario where he's reaching and you lower the branch (he should grab the apple right?)
-- Handle scenario where he's stooping or unstooping and you raise the water (he should unstoop and drink the water right?) (or should it simply be that if the water goes over his head he just drinks it? How can I tell?)
 - Sound
 - Feel
 
