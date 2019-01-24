@@ -14,6 +14,12 @@ let Danaids = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Sound
+    this.emptySFX = this.sound.add('swoopdown');
+    this.fillSFX = this.sound.add('swoopup');
+    this.gameOverSFX = this.sound.add('swoopdown');
+    this.victorySFX = this.sound.add('victory');
+
     // Add tap
     this.tap = this.add.sprite(4*5, this.game.canvas.height/2 + 4*16, 'atlas', 'danaids/tap/tap_1.png');
     this.tap.setScale(4,4);
@@ -56,6 +62,7 @@ let Danaids = new Phaser.Class({
     this.danaid.on('animationcomplete',function (animation,frame) {
       if (animation.key === 'pour') {
         this.pouring = true;
+        this.fillSFX.play();
       }
       else if (animation.key === 'unpour') {
         if (this.fullPercentage === 100) {
@@ -113,7 +120,6 @@ let Danaids = new Phaser.Class({
 
     this.bath.on('animationcomplete',function (animation,frame) {
       if (animation.key === 'bath_finish_empty') {
-        console.log("Here")
         setTimeout(() => {
           this.bath.anims.play('bath_closed');
           this.holesOpen = false;
@@ -230,9 +236,10 @@ let Danaids = new Phaser.Class({
         if (this.cleanPercentage >= 100) {
           this.cleanPercentage = 100;
           this.gameIsOver = true;
+          this.victorySFX.play();
           setTimeout(() => {
             this.gameOver();
-          },1250);
+          },1000);
         }
       }
       this.danaidInformationText.text = `CLEANLINESS: ${Math.floor(this.cleanPercentage)}%`
@@ -262,6 +269,7 @@ let Danaids = new Phaser.Class({
     else if (this.holesOpen && this.fullPercentage > 0) {
       this.emptying = true;
       this.bath.anims.play('bath_emptying');
+      this.emptySFX.play();
     }
 
     this.informationText.text = `BATH FULL: ${this.fullPercentage + this.currentPourAmount}%`;
@@ -269,6 +277,8 @@ let Danaids = new Phaser.Class({
 
   gameOver: function () {
     this.gameIsOver = true;
+
+    this.gameOverSFX.play();
 
     let screenRect = new Phaser.Geom.Rectangle(0,0, this.game.canvas.width, this.game.canvas.height);
     let gameOverBackground = this.add.graphics({ fillStyle: { color: '#000' } });
@@ -280,7 +290,7 @@ let Danaids = new Phaser.Class({
 
     setTimeout(() => {
       this.scene.start('menu');
-    },2000);
+    },4000);
   },
 
   // createAnimation(name,start,end)

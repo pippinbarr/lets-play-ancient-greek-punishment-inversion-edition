@@ -18,6 +18,10 @@ let Zeno = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Sound
+    this.victorySFX = this.sound.add('victory');
+    this.gameOverSFX = this.sound.add('swoopdown');
+
     // Create the sprite that represents the entire minigame, scale up
     this.zeno = this.add.sprite(4*10, this.game.canvas.height/2 + 4*15, 'atlas', 'zeno/zeno/zeno_1.png');
     this.zeno.setScale(4,4);
@@ -57,6 +61,8 @@ let Zeno = new Phaser.Class({
     let instructionString = "YOU ARE THE FLAG\nUSE ARROW KEYS\nTO MOVE";
     this.instructionsText = this.add.text(this.game.canvas.width/4,100,instructionString,instructionStyle);
     this.instructionsText.setOrigin(0.5);
+
+    this.inputEnabled = true;
   },
 
   update: function (time,delta) {
@@ -71,7 +77,8 @@ let Zeno = new Phaser.Class({
       this.gameIsOver = true;
       this.zeno.play('victory');
       this.inputEnabled = false;
-      
+      this.victorySFX.play();
+
       setTimeout(() => {
         this.gameOver();
       },1250);
@@ -138,6 +145,8 @@ let Zeno = new Phaser.Class({
 
   gameOver: function () {
     this.gameIsOver = true;
+
+    this.gameOverSFX.play();
 
     let screenRect = new Phaser.Geom.Rectangle(0,0, this.game.canvas.width, this.game.canvas.height);
     let gameOverBackground = this.add.graphics({ fillStyle: { color: '#000' } });

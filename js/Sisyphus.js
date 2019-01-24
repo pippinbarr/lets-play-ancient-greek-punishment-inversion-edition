@@ -25,6 +25,10 @@ let Sisyphus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Sound
+    this.victorySFX = this.sound.add('victory');
+    this.gameOverSFX = this.sound.add('swoopdown');
+
     this.hill = this.add.sprite(this.game.canvas.width/2, this.game.canvas.height/2,'atlas','sisyphus/hill.png');
     this.hill.setScale(4,4);
 
@@ -76,12 +80,12 @@ let Sisyphus = new Phaser.Class({
 
     switch (anims.currentAnim.key) {
       case 'uphill':
-      console.log(anims.currentFrame.index);
       if (anims.currentFrame.index === anims.currentAnim.frames.length) {
-        this.gameOver === true;
+        this.gameIsOver = true;
+        this.victorySFX.play();
         setTimeout(() => {
           this.gameOver();
-        },250)
+        },1000)
       }
       if (this.rockForce > 0) {
         anims.play('downhill');
@@ -119,6 +123,8 @@ let Sisyphus = new Phaser.Class({
   gameOver: function () {
     this.gameIsOver = true;
 
+    this.gameOverSFX.play();
+
     let screenRect = new Phaser.Geom.Rectangle(0,0, this.game.canvas.width, this.game.canvas.height);
     let gameOverBackground = this.add.graphics({ fillStyle: { color: '#000' } });
     gameOverBackground.fillRectShape(screenRect);
@@ -129,7 +135,7 @@ let Sisyphus = new Phaser.Class({
 
     setTimeout(() => {
       this.scene.start('menu');
-    },2000);
+    },4000);
   },
 
   // createAnimation(name,start,end)

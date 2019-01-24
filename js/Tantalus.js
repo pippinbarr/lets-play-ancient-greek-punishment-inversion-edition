@@ -17,6 +17,12 @@ let Tantalus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Sound
+    this.waterDownSFX = this.sound.add('swoopdown');
+    this.branchUpSFX = this.sound.add('swoopup');
+    this.gameOverSFX = this.sound.add('swoopdown');
+    this.victorySFX = this.sound.add('victory');
+
     // Tantalus
 
     // - Sprite
@@ -235,6 +241,7 @@ let Tantalus = new Phaser.Class({
   },
 
   eat: function  () {
+    this.victorySFX.play();
     this.tantalus.x -= 1*8;
     this.tantalus.y += 3*8;
     this.tantalus.anims.play('eating');
@@ -244,6 +251,7 @@ let Tantalus = new Phaser.Class({
   },
 
   drink: function  () {
+    this.victorySFX.play();
     this.tantalus.anims.play('drinking');
     this.drinking = true;
     this.gameIsOver = true;
@@ -258,6 +266,7 @@ let Tantalus = new Phaser.Class({
         this.branchRaising = true;
         this.branchDown = false;
         this.branch.anims.play('branch_raise');
+        this.branchUpSFX.play();
       }
       else if (!this.branchKey.isDown && this.branchUp) {
         this.branchUp = false;
@@ -271,6 +280,7 @@ let Tantalus = new Phaser.Class({
         this.waterLowering = true;
         this.waterUp = false;
         this.water.anims.play('water_lower');
+        this.waterDownSFX.play();
       }
       else if (!this.waterKey.isDown && this.waterDown) {
         this.waterDown = false;
@@ -283,6 +293,7 @@ let Tantalus = new Phaser.Class({
 
   gameOver: function (text) {
     this.gameIsOver = true;
+    this.gameOverSFX.play();
 
     let screenRect = new Phaser.Geom.Rectangle(0,0, this.game.canvas.width, this.game.canvas.height);
     let gameOverBackground = this.add.graphics({ fillStyle: { color: '#000' } });
@@ -294,7 +305,7 @@ let Tantalus = new Phaser.Class({
 
     setTimeout(() => {
       this.scene.start('menu');
-    },2000);
+    },4000);
   },
 
   // createAnimation(name,start,end)

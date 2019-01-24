@@ -13,6 +13,13 @@ let Prometheus = new Phaser.Class({
 
     this.gameIsOver = false;
 
+    // Sound
+
+    this.peckSFX = this.sound.add('peck');
+    this.liverRegenerationSFX = this.sound.add('swoopup');
+    this.gameOverSFX = this.sound.add('swoopdown');
+    this.victorySFX = this.sound.add('victory');
+
     // Prometheus
 
     this.prometheus = this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2 + 4*10,'atlas','prometheus/prometheus/prometheus_1.png').setScale(4);
@@ -79,7 +86,7 @@ let Prometheus = new Phaser.Class({
 
     // Stats
 
-    this.liver = 10;
+    this.liver = 100;
 
     let liverStatStyle = { fontFamily: 'Commodore', fontSize: '28px', fill: '#000', wordWrap: true, align: 'left' };
     let liverStatString = `LIVER: ${this.liver}%`;
@@ -139,8 +146,12 @@ let Prometheus = new Phaser.Class({
         this.inputEnabled = false;
         setTimeout(() => {
           if (this.liver > 0) {
+            console.log("Liver > 0")
             this.gameIsOver = true;
-            this.gameOver("PROMETHEUS MADE IT TO THE NIGHT\nWITH SOME LIVER INTACT!");
+            this.victorySFX.play();
+            setTimeout(() => {
+              this.gameOver("PROMETHEUS MADE IT TO THE NIGHT\nWITH SOME LIVER INTACT!");
+            },1000);
           }
           else {
             this.reset();
@@ -170,20 +181,23 @@ let Prometheus = new Phaser.Class({
       duration: Phaser.Math.Distance.Between(this.eagle.x,this.eagle.y,this.game.canvas.width + 20,20)/50 * 1000,
       repeat: 0,
       onComplete: () => {
-        this.eagle.x = -20;
-        this.eagle.y = -20;
-        this.currentPerch = null;
-        this.liverText.text = `LIVER: ${this.liver}%`;
-        this.dayText.text = `DAYS: ${this.days}`;
-        this.tweens.add({
-          targets: [this.night, this.darkRock],
-          alpha: 0,
-          duration: 2000,
-          repeat: 0,
-          onComplete: () => {
-            this.arrive();
-          },
-        });
+        this.liverRegenerationSFX.play();
+        setTimeout(() => {
+          this.eagle.x = -20;
+          this.eagle.y = -20;
+          this.currentPerch = null;
+          this.liverText.text = `LIVER: ${this.liver}%`;
+          this.dayText.text = `DAYS: ${this.days}`;
+          this.tweens.add({
+            targets: [this.night, this.darkRock],
+            alpha: 0,
+            duration: 2000,
+            repeat: 0,
+            onComplete: () => {
+              this.arrive();
+            },
+          });
+        },2000);
       }
     });
   },
@@ -281,6 +295,7 @@ let Prometheus = new Phaser.Class({
     }
 
     this.eagle.anims.play("eagle_peck");
+    this.peckSFX.play();
 
     this.liver -= 10;
     if (this.liver < 0) this.liver = 0;
@@ -296,21 +311,6 @@ let Prometheus = new Phaser.Class({
     setTimeout(() => {
       if (this.liver > 0) this.canPeck = true;
     },750);
-  },
-
-  gameOver: function () {
-    this.gameIsOver = true;
-
-    this.blackness.visible =  true;
-    this.blackness.alpha = 1;
-    let gameOverStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#aaf', wordWrap: true, align: 'center' };
-    let gameOverString = "YOU LOSE!\n\nXXXXX";
-    let gameOverText = this.add.text(this.game.canvas.width/2,this.game.canvas.height/2,gameOverString,gameOverStyle);
-    gameOverText.setOrigin(0.5);
-
-    setTimeout(() => {
-      this.scene.start('menu');
-    },2000);
   },
 
   // createAnimation(name,start,end)
@@ -398,6 +398,8 @@ let Prometheus = new Phaser.Class({
   gameOver: function (text) {
     this.gameIsOver = true;
 
+    this.gameOverSFX.play();
+
     this.blackness.alpha = 1;
     let gameOverStyle = { fontFamily: 'Commodore', fontSize: '24px', fill: '#faa', wordWrap: true, align: 'center' };
     let gameOverString = "YOU LOSE!\n\n" + text;
@@ -406,7 +408,7 @@ let Prometheus = new Phaser.Class({
 
     setTimeout(() => {
       this.scene.start('menu');
-    },2000);
+    },4000);
   }
 
 });

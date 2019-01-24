@@ -87,9 +87,10 @@
 - Sound
 - Feel
 
-## Two-player
+## ~~Two-player~~
 
-- Implement it please.
+- ~~Implement it please.~~
+- __TWO PLAYER WILL BE A DIFFERENT GAME__ - because it doesn't make sense in the context of "inversion", maybe it can be a "competition edition" or something. Hehe.
 
 ## Bugs
 
