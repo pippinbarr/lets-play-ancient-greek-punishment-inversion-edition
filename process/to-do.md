@@ -94,7 +94,12 @@
 - ~~Should I have some kind of fancy "Pippin Barr" logo thing?~~
 - ~~Fix CSS to position the canvas in the centre of the screen at least~~
 
-- And I guess that's it? Launch next week? Send to press... today?
+## Release process
+
+- Make a press kit
+- Make sure the repo looks pretty
+- Send to press
+- Release (Tuesday?)
 
 ## Bugs
 
