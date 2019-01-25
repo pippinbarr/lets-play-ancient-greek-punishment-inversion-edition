@@ -88,8 +88,15 @@
 - ~~Implement it please.~~
 - __TWO PLAYER WILL BE A DIFFERENT GAME__ - because it doesn't make sense in the context of "inversion", maybe it can be a "competition edition" or something. Hehe.
 
+## Finishing touches
+
+- ~~Add stat counting stuff~~
+
+- Should I have some kind of fancy "Pippin Barr" logo thing?
+- And I guess that's it?
+
 ## Bugs
 
-- TTF font doesn't always display, vanishes after hard reload (no cache), drops back to Times or similar
-  - Seems to rectify when you load the next scene (Sisyphus always has correct font, even when Menu doesn't)
-  - I've actually seen it break on the second scene too now, but very rare - what is this??
+- ~~__GUUUUEEEESSSS I FIXED THIS WITH THE PRELOADER?__ TTF font doesn't always display, vanishes after hard reload (no cache), drops back to Times or similar~~
+  - ~~Seems to rectify when you load the next scene (Sisyphus always has correct font, even when Menu doesn't)~~
+  - ~~I've actually seen it break on the second scene too now, but very rare - what is this??~~
