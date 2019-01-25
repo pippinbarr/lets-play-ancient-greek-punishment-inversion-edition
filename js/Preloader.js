@@ -10,6 +10,7 @@ let Preloader = new Phaser.Class({
     this.ready = false;
 
     this.load.multiatlas('atlas', 'assets/atlas/atlas.json', 'assets/atlas');
+    // this.load.image('clown','assets/clown_logo.png');
 
     this.load.audio('peck', ['assets/sounds/peck.mp3','assets/sounds/peck.ogg']);
     this.load.audio('swoopup', ['assets/sounds/swoopup.mp3','assets/sounds/swoopup.ogg']);
@@ -23,8 +24,10 @@ let Preloader = new Phaser.Class({
     let titleStyle = { fontFamily: 'Commodore', fontSize: '38px', fill: '#000', wordWrap: true, align: 'center' };
     let title = this.add.text(this.game.canvas.width/2,100,"LET'S PLAY:\nANCIENT GREEK PUNISHMENT:\nINVERSION EDITION",titleStyle);
 
+    this.add.sprite(this.game.canvas.width/2,this.game.canvas.height/2,'clown_logo');
+
     setTimeout(() => {
       this.scene.start('menu');
-    },500);
+    },2000);
   },
 });

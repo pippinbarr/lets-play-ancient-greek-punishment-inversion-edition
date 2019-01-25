@@ -2,7 +2,7 @@ let config = {
   type: Phaser.CANVAS,
   width: 800,
   height: 400,
-  scene: [Preloader, Menu, Sisyphus, Zeno, Danaids, Tantalus, Prometheus],
+  scene: [Boot, Preloader, Menu, Sisyphus, Zeno, Danaids, Tantalus, Prometheus],
   pixelArt: true,
   physics: {
     default: 'arcade',
@@ -10,7 +10,6 @@ let config = {
       debug: false
     }
   },
-
 };
 
 let game = new Phaser.Game(config);

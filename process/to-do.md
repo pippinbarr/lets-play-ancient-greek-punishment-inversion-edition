@@ -91,9 +91,9 @@
 ## Finishing touches
 
 - ~~Add stat counting stuff~~
+- ~~Should I have some kind of fancy "Pippin Barr" logo thing?~~
 
-- Should I have some kind of fancy "Pippin Barr" logo thing?
-- And I guess that's it?
+- And I guess that's it? Launch next week? Send to press... today?
 
 ## Bugs
 
