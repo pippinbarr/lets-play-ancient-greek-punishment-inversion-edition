@@ -96,10 +96,10 @@
 
 ## Release process
 
-- Make a press kit
-- Make sure the repo looks pretty
-- Send to press
-- Release (Tuesday?)
+- ~~Make a press kit~~
+- ~~Make sure the repo looks pretty~~
+- ~~Send to press~~
+- Release (Tuesday 29 January 2019 10:00EST)
 
 ## Bugs
 
