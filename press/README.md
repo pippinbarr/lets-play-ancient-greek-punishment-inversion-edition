@@ -46,7 +46,7 @@ _Let's Play: Ancient Greek Punishment: Inversion Edition_ is an open source game
 
 ### Trailer
 
-[![Trailer Thumbnail](https://img.youtube.com/vi/wWGxpc5c8nQ/0.jpg)](https://www.youtube.com/watch?v=wWGxpc5c8nQ)
+[![Trailer Thumbnail](https://img.youtube.com/vi/shq6kG8KdNU/0.jpg)](https://www.youtube.com/watch?v=shq6kG8KdNU)
 
 ## Images
 
@@ -60,7 +60,7 @@ _Let's Play: Ancient Greek Punishment: Inversion Edition_ is an open source game
 
 ![Zeno](images/zeno.png)
 
-![Start](images/press/start.png) 
+![Start](images/press/start.png)
 
 ## Press
 
