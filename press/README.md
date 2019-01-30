@@ -64,7 +64,7 @@ _Let's Play: Ancient Greek Punishment: Inversion Edition_ is an open source game
 
 ## Press
 
-- Coming soon?
+- Gita Jackson. [A Game Where You Are The Boulder Sisyphus Must Push](https://kotaku.com/a-game-where-you-are-the-boulder-sisyphus-must-push-1832165226). Kotaku. 29 January 2019.
 
 ## Additional Links
 
