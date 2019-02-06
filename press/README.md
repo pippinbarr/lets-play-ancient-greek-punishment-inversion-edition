@@ -65,6 +65,8 @@ _Let's Play: Ancient Greek Punishment: Inversion Edition_ is an open source game
 ## Press
 
 - Gita Jackson. [A Game Where You Are The Boulder Sisyphus Must Push](https://kotaku.com/a-game-where-you-are-the-boulder-sisyphus-must-push-1832165226). Kotaku. 29 January 2019.
+- Michał Tomaszkiewicz. [Dzięki tej grze możesz znęcać się nad Syzyfem, Prometeuszem i Tantalem
+Więcej: https://www.antyradio.pl/Technologia/Gry/Dzieki-tej-grze-mozesz-znecac-sie-nad-Syzyfem-Prometeuszem-i-Tantalem-28896](https://www.antyradio.pl/Technologia/Gry/Dzieki-tej-grze-mozesz-znecac-sie-nad-Syzyfem-Prometeuszem-i-Tantalem-28896). Antyradio.pl. 30 January 2019. (In Polish.)
 
 ## Additional Links
 
