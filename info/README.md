@@ -14,10 +14,10 @@ _Let's Play: Ancient Greek Punishment: Inversion Edition_ is a new edition in th
 - Michał Tomaszkiewicz. [Dzięki tej grze możesz znęcać się nad Syzyfem, Prometeuszem i Tantalem
 Więcej: https://www.antyradio.pl/Technologia/Gry/Dzieki-tej-grze-mozesz-znecac-sie-nad-Syzyfem-Prometeuszem-i-Tantalem-28896](https://www.antyradio.pl/Technologia/Gry/Dzieki-tej-grze-mozesz-znecac-sie-nad-Syzyfem-Prometeuszem-i-Tantalem-28896). Antyradio.pl. 30 January 2019. (In Polish.)
 
-Read the [Press kit](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition/blob/master/press/README.md) for press information
+Read the [Press kit](../press) for press information
 
 ## Documentation
-* Read the [Process documentation](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition/blob/master/process/README.md) for process journal, to do list, research questions, and related work
+* Read the [Process documentation](../process) for process journal, to do list, research questions, and related work
 * Read the [Commit History](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition/commits/master) for step-by-step information about how the project was built
 * Look at the [Code Repository](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition) for source code etc.
 
